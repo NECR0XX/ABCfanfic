@@ -8,6 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Resources/css/style.css">
     <script src="../Resources/Js/script.js"></script>
     <title>Document</title>
 </head>
@@ -21,10 +22,13 @@ session_start();
         <?php endif; ?>
     </header>
     <section>
-        <h1>Cuzinho 3=======D</h1>
-        <a href="User/tags.php">Tags</a><br>
-        <a href="User/perfil.php">perfil</a><br>
-        <a href="User/sobre.php">Sobre</a>
+        <div class="retangulo">
+        <img src="../Resources/Assets/Uploads/WhatsApp Image 2024-03-15 at 9.43.43 AM.jpeg" alt="logo" class="logo">
+        <h1 class="titulo">Cuzinho 3=======D</h1></div>
+        
+        <div class="subretangulo"><a href="User/tags.php">Tags</a>
+        <a href="User/perfil.php">perfil</a>
+        <a href="User/sobre.php">Sobre</a></div>
     </section>
 </body>
 </html>

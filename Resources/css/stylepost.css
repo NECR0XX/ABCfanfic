@@ -1,0 +1,114 @@
+body {
+    background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
+    background-size: 300px;
+    height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+.container {
+    width: 1070;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  .container2 {
+    width: 1178px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EDEDED;
+    padding: 40px;
+    text-align: center;
+  }
+
+.pi {
+    text-align: left;
+    width: 600px;
+    border: 1px solid #ccc; /* borda sólida com cor cinza claro */
+    border-radius: 5px; /* borda arredondada */
+    font-family: Arial, sans-serif; /* família da fonte */
+    font-size: 13px; /* tamanho da fonte */
+    line-height: 1.0; /* altura da linha */
+}
+
+#placeholder {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Alinha a imagem horizontalmente no centro */
+    align-items: center; /* Alinha a imagem verticalmente no centro */
+    width: 200px; /* Largura do contêiner */
+    height: 200px; /* Altura do contêiner */
+    background-color: #f0f0f0; /* Cor de fundo */
+    border: 2px dashed #ccc; /* Estilo da borda */
+    cursor: pointer; /* Cursor do mouse */
+  }
+  
+  #placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #fileInput {
+    display: none;
+  }
+
+.tit {
+    display: flex;
+    
+}
+
+.titi {
+    border: 1px solid #ccc; /* borda sólida com cor cinza claro */
+    border-radius: 5px; /* borda arredondada */
+    font-family: Arial, sans-serif; /* família da fonte */
+    font-size: 16px; /* tamanho da fonte */
+    line-height: 1.0; /* altura da linha */
+}
+
+.botao {
+    background-color: #A8A6E1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.botao::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(209, 209, 209, 0.2);
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background-color: #4E437B; /* Altere a cor do botão ao passar o mouse */
+}
+
+.botao:hover::after {
+    width: 0;
+    height: 0;
+}
