@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Mar-2024 às 02:33
+-- Tempo de geração: 15-Mar-2024 às 18:58
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -31,9 +31,17 @@ CREATE TABLE `fanfic` (
   `id_fanfic` int(11) NOT NULL,
   `imagem` varchar(255) NOT NULL,
   `titulo` varchar(255) NOT NULL,
+  `sinopse` text NOT NULL,
   `text` text NOT NULL,
   `nome_user` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `fanfic`
+--
+
+INSERT INTO `fanfic` (`id_fanfic`, `imagem`, `titulo`, `sinopse`, `text`, `nome_user`) VALUES
+(5, '../../Resources/Assets/Uploads/OIP.jfif', 'teste', 'Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua.', 'Loren ipsun dolor sit anet, consectetur labore et dolore nagna aliqua.', 'Wesley');
 
 -- --------------------------------------------------------
 
@@ -79,7 +87,7 @@ ALTER TABLE `log_cad`
 -- AUTO_INCREMENT de tabela `fanfic`
 --
 ALTER TABLE `fanfic`
-  MODIFY `id_fanfic` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_fanfic` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `log_cad`
