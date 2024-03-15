@@ -12,6 +12,7 @@
                     <th>Autor</th>
                     <th>Título</th>
                     <th>Texto</th>
+                    <th>Sinopse</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,6 +30,7 @@
                         <td><?php echo $fanfic['nome_user']; ?></td>
                         <td><?php echo $fanfic['titulo']; ?></td>
                         <td><?php echo $fanfic['text']; ?></td>
+                        <td><?php echo $fanfic['sinopse']; ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
