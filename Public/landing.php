@@ -24,7 +24,7 @@ session_start();
     <section>
         <div class="retangulo">
         <img src="../Resources/Assets/Uploads/WhatsApp Image 2024-03-15 at 9.43.43 AM.jpeg" alt="logo" class="logo">
-        <h1 class="titulo">Cuzinho 3=======D</h1></div>
+    </div>
         
         <div class="subretangulo"><a href="User/tags.php">Tags</a>
         <a href="User/perfil.php">perfil</a>
