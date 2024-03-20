@@ -10,14 +10,17 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Resources/css/styleperfil.css">
     <title>Document</title>
 </head>
 <body>
     <header>
+       
+    </header>
+    <section class="container2">
+        <div class="container">
         <a href="../landing.php">voltar</a>
         <a href="post.php">post</a>
-    </header>
-    <section>
         <h1>Adicionar Histórias | Histórias Excluidas</h1>
         <?php
 if (count($fanfics) > 0) {
@@ -36,7 +39,7 @@ if (count($fanfics) > 0) {
 
             echo "<form action='../../App/Providers/concluido.php' method='post'>";
             echo "<input type='hidden' name='id_fanfic' value='{$fanfic['id_fanfic']}'>";
-            echo "<input type='submit' name='marcar_concluido' value='Marcar como Concluído'>";
+            echo "<input class='botao' type='submit' name='marcar_concluido' value='Marcar como Concluído'>";
             echo "</form>";
         }
         echo "</p>";
