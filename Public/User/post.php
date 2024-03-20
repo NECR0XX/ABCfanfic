@@ -43,16 +43,15 @@ if (isset($_POST['titulo']) &&
     <div class="container">
         <form action="post.php" method="post" enctype="multipart/form-data">
 
-        <div class="alinhamento" id="placeholder" onclick="selectImage()">
-        <img src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
-    </div>
-
-        <input type="file" name="imagem" accept="image/*" required>
+        <div id="placeholder" onclick="selectImage()">
+  <img src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
+</div>
+<input type="file" id="fileInput" onchange="loadImage(event)" accept="image/*">
 
         <script src="script.js"></script><br>
         <div class="tit">
-        <input type="text" name="titulo" placeholder="Título" required>
-        <textarea name="sinopse" cols="30" rows="10" placeholder="Escreva aqui sua sinopse!" required></textarea>
+        <input type="text" name="titulo" placeholder="Título" required><br>
+        <textarea name="sinopse" cols="30" rows="10" placeholder="Escreva aqui sua sinopse!" required></textarea><br>
         <select name="categoria_id" placeholder="Tags" required>
             <option>Tags...</option>
             <option value="1">Fantasia</option>
@@ -66,7 +65,8 @@ if (isset($_POST['titulo']) &&
             <option value="9">Guerra</option>
             <option value="10">Luta</option>
         </select>
-        <button type="submit">Adicionar fanfic</button>
+        <br>
+        <button class="botao" type="submit">Adicionar fanfic</button>
     </form></div></div>
 </body>
 </html>
