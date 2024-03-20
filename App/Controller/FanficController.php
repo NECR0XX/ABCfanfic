@@ -20,7 +20,7 @@ class FanficController {
     }
     
     public function listarFanfics2() {
-        return $this->equipeModel->listarFanfics2();
+        return $this->fanficModel->listarFanfics2();
     }
 
     public function listarFanficsPorCategoria($categoria_id) {

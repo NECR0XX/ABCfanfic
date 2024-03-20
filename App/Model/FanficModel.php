@@ -26,7 +26,7 @@ class FanficModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function listarFanfics() {
+    public function listarFanfics2() {
         $sql = "SELECT * FROM fanfic";
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
