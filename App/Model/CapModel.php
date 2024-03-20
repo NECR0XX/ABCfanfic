@@ -13,11 +13,21 @@ class CapModel {
         $stmt->execute([$cap, $titulo, $texto, $fanfic_id]);
     }
 
-    // Model para listar Caps
-    public function listarCaps() {
-        $sql = "SELECT * FROM capitulos";
-        $stmt = $this->pdo->query($sql);
+    public function listarCaps($fanfic_id) {
+        $query = "SELECT * FROM capitulos WHERE fanfic_id = :id_fanfic";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':id_fanfic', $fanfic_id, PDO::PARAM_INT);
+        $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }  
+
+    public function listarCapPorId($id_capitulo) {
+        $query = "SELECT * FROM capitulos WHERE id_capitulo = :id_capitulo";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':id_capitulo', $id_capitulo, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+    
 }
 ?>

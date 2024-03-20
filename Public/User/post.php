@@ -44,9 +44,10 @@ if (isset($_POST['titulo']) &&
         <form action="post.php" method="post" enctype="multipart/form-data">
 
         <div id="placeholder" onclick="selectImage()">
-  <img src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
-</div>
-<input type="file" id="fileInput" onchange="loadImage(event)" accept="image/*">
+            <img id="imagePreview" src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
+        </div>
+
+        <input type="file" id="fileInput" name="imagem" accept="image/*" style="display: none;" onchange="loadImage(event)" required>
 
         <script src="script.js"></script><br>
         <div class="tit">
