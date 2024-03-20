@@ -45,7 +45,7 @@ if (count($fanfics) > 0) {
 
         echo "<a style='color:black;' href='../../App/Providers/atualizar.php?id={$fanfic['id_fanfic']}'>Atualizar</a>" . "<br>";
         echo "<a style='color:black;' href='../../App/Providers/deletar.php?id={$fanfic['id_fanfic']}'>Deletar</a>" . "<br>";
-        echo "<a style='color:black;' href='capview.php?fanfic_id={$fanfic['id_fanfic']}'>Vizualizar Capítulos</a>" . "<br>";
+        echo "<a style='color:black;' href='capview.php?fanfic_id={$fanfic['id_fanfic']}'>Visualizar Capítulos</a>" . "<br>";
         if ($fanfic['concluido']){
 
         } else {
