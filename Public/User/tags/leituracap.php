@@ -14,10 +14,12 @@ $caps = $capController->listarCapPorId($id_capitulo);
     <title>Document</title>
 </head>
 <body>
+    <a href="leiturafan.php">Voltar</a>
     <?php
-        echo $caps['cap'] . "<p><strong>Título: </strong>" . $caps['titulo'] . "</p>";
+        echo "<p>" . $caps['cap'] . "<strong> - </strong>" . $caps['titulo'] . "</p>";
         echo "<p><strong>Texto: </strong>" . $caps['texto'] . "</p>";
+
+        echo "<a href='leituracap.php?id_capitulo={$caps['id_capitulo']}'>Próximo Capítulo</a>";
     ?>
-    
 </body>
 </html>
