@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Lista de Usuários</title>
 </head>
 <body>
-    <h1>Deletar equipe</h1>
+    <h1>Deletar Fanfic</h1>
     <p>Tem certeza que deseja deletar a história <?php echo "<strong>" . $appointment ['titulo'] . "<strong>'";?>?</p>
     <form method="post">
         <button type="submit">Sim</button>

@@ -32,7 +32,11 @@ session_start();
         
         <div class="subretangulo">
             <a href="User/tags.php">Tags</a>
-            <a href="User/perfil.php">Perfil</a>
+            <?php
+                if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
+                <a href="User/perfil.php">perfil</a><br>
+            <?php else: ?>
+            <?php endif; ?>
             <a href="User/sobre.php">Sobre</a>
         </div>
 

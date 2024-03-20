@@ -1,9 +1,38 @@
 <?php
 include '../../Config/config.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!isset($_GET['id'])) {
+        header('Location: ../../Public/User/perfil.php');
+        exit;
+    }
+    
+    $id_fanfic = $_GET['id'];
+
+    if (!empty($_FILES['nova_imagem']['tmp_name'])) {
+        $imagem = "../../Resources/Assets/Uploads/" . $_FILES['nova_imagem']['name'];
+        move_uploaded_file($_FILES['nova_imagem']['tmp_name'], $imagem);
+    } else {
+        $stmt = $pdo->prepare('SELECT imagem FROM fanfic WHERE id_fanfic = ?');
+        $stmt->execute([$id_fanfic]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $imagem = $result['imagem'];
+    }
+
+    $titulo = $_POST['titulo'];
+    $sinopse = $_POST['sinopse'];
+
+    $stmt = $pdo->prepare('UPDATE fanfic SET imagem = ?, titulo = ?, sinopse = ? WHERE id_fanfic = ?');
+    $stmt->execute([$imagem, $titulo, $sinopse, $id_fanfic]);
+    header('Location: ../../Public/User/perfil.php');
+    exit;
+}
+
 if (!isset($_GET['id'])) {
     header('Location: ../../Public/User/perfil.php');
     exit;
 }
+
 $id_fanfic = $_GET['id'];
 
 $stmt = $pdo->prepare('SELECT * FROM fanfic WHERE id_fanfic = ?');
@@ -14,10 +43,10 @@ if (!$appointment) {
     header('Location: ../../Public/User/perfil.php');
     exit;   
 }
+
 $imagem = $appointment['imagem'];
 $titulo = $appointment['titulo'];   
 $sinopse = $appointment['sinopse'];
-$text = $appointment['text'];
 ?>
 
 <!DOCTYPE html>
@@ -43,29 +72,8 @@ $text = $appointment['text'];
     <label for="sinopse">Sinopse:</label>
     <textarea name="sinopse" required><?php echo $sinopse; ?></textarea></br></br>
 
-    <label for="text">Texto:</label>
-    <textarea name="text" required><?php echo $text; ?></textarea></br>
-
     <button type="submit">Atualizar</button>
 </form>
 
 </body>
 </html>
-
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!empty($_FILES['nova_imagem']['tmp_name'])) {
-        $imagem = "../../Resources/Assets/Uploads/" . $_FILES['nova_imagem']['name'];
-        move_uploaded_file($_FILES['nova_imagem']['tmp_name'], $imagem);
-    } else {
-        $imagem = $appointment['imagem'];
-    }
-    $titulo = $_POST['titulo'];
-    $sinopse = $_POST['sinopse'];
-    $text = $_POST['text'];
-
-    $stmt = $pdo->prepare('UPDATE fanfic SET imagem = ?, titulo = ?, sinopse = ?, text = ? WHERE id_fanfic = ?');
-    $stmt->execute([$imagem, $titulo, $sinopse, $text, $id_fanfic]);
-    header('Location: ../../Public/User/perfil.php');
-    exit;
-}
