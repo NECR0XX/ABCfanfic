@@ -26,11 +26,13 @@ class FanficModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function listarFanfics2() {
-        $sql = "SELECT * FROM fanfic";
-        $stmt = $this->pdo->query($sql);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
+    public function getFanficById($fanfic_id) {
+        $query = "SELECT * FROM fanfic WHERE id_fanfic = :fanfic_id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':fanfic_id', $fanfic_id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }    
 
     public function listarFanficsPorCategoria($categoria_id) {
         $sql = "SELECT * FROM fanfic WHERE categoria_id = :categoria_id";

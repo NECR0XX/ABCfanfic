@@ -24,7 +24,7 @@ if (count($fanfics) > 0) {
     foreach ($fanfics as $fanfic) {
         echo "<p><strong>Título: </strong>{$fanfic['titulo']}</p>";
         if (!empty($fanfic['imagem'])) {
-            echo '<img src="' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
+            echo '<img src="./' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
         } else {
             echo 'Sem Imagem';
         }

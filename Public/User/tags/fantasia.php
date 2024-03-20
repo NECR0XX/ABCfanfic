@@ -20,10 +20,10 @@ if (isset($_GET['categoria_id'])) {
     <a href="../tags.php">Voltar</a><br><br>
     <?php
         foreach ($fanfics as $fanfic) {
-            echo "<a href='#'><p><strong>Título: </strong>{$fanfic['titulo']}</p></a>";
+            echo "<a href='leiturafan.php?fanfic_id={$fanfic['id_fanfic']}'><p><strong>Título: </strong>{$fanfic['titulo']}</p></a>";
             echo "<p><strong>Autor: </strong>{$fanfic['nome_user']}</p>";
             if (!empty($fanfic['imagem'])) {
-                echo '<img src="' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
+                echo '<img src="../' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
             } else {
                 echo 'Sem Imagem';
             }

@@ -45,9 +45,10 @@ if (isset($_POST['titulo']) &&
         <button class="botao-voltar"><a href="perfil.php">⇦Voltar</a></button><br><br>
 
         <div id="placeholder" onclick="selectImage()">
-  <img src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
-</div>
-<input type="file" id="fileInput" onchange="loadImage(event)" accept="image/*">
+            <img id="imagePreview" src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">
+        </div>
+
+        <input type="file" id="fileInput" name="imagem" accept="image/*" style="display: none;" onchange="loadImage(event)" required>
 
         <script src="script.js"></script><br>
         <div class="tit">

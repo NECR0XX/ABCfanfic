@@ -4,21 +4,20 @@ function logout() {
 }
 
 function selectImage() {
-    document.getElementById('fileInput').click();
-  }
+  document.getElementById('fileInput').click();
+}
+
+function loadImage(event) {
+  const file = event.target.files[0];
+  const reader = new FileReader();
   
-  function loadImage(event) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    
-    reader.onload = function() {
+  reader.onload = function() {
       const imageUrl = reader.result;
-      const placeholder = document.getElementById('placeholder');
-      placeholder.innerHTML = `<img src="${imageUrl}" alt="Selected Image">`;
-    }
-    
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+      const imagePreview = document.getElementById('imagePreview');
+      imagePreview.src = imageUrl; // Atualiza a imagem exibida
   }
   
+  if (file) {
+      reader.readAsDataURL(file);
+  }
+}

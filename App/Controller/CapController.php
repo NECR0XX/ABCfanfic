@@ -1,5 +1,5 @@
 <?php
-require_once '../../App\Model\CapModel.php';
+require_once 'C:\xampp\htdocs\ABCfanfic\App\Model\CapModel.php';
 
 class CapController {
     private $capModel;
@@ -12,14 +12,16 @@ class CapController {
 
     public function criarCap($cap, $titulo, $texto, $fanfic_id) {
         $this->capModel->criarCap($cap, $titulo, $texto, $fanfic_id);
-    }
+    }  
 
     public function listarCaps($fanfic_id) {
-        $query = "SELECT * FROM capitulos WHERE fanfic_id = :id_fanfic";
-        $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(':id_fanfic', $fanfic_id, PDO::PARAM_INT);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $caps = $this->capModel->listarCaps($fanfic_id);
+        return $caps;
+    }
+
+    public function listarCapPorId($id_capitulo) {
+        $cap = $this->capModel->listarCapPorId($id_capitulo);
+        return $cap;
     }    
 
     public function exibirListaCaps() {

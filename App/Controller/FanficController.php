@@ -19,10 +19,11 @@ class FanficController {
         return $fanfics;
     }
     
-    public function listarFanfics2() {
-        return $this->fanficModel->listarFanfics2();
+    public function getFanficById($fanfic_id) {
+        $fanfics = $this->fanficModel->getFanficById($fanfic_id);
+        return $fanfics;
     }
-
+    
     public function listarFanficsPorCategoria($categoria_id) {
         $fanfics = $this->fanficModel->listarFanficsPorCategoria($categoria_id);
         return $fanfics;
