@@ -16,7 +16,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
 <body>
     <header>
        
-    </header>
+</header>
     <section class="container2">
         <div class="container">
         <a href="../landing.php">voltar</a>
