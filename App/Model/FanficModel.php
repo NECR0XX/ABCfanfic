@@ -26,6 +26,12 @@ class FanficModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function listarFanfics() {
+        $sql = "SELECT * FROM fanfic";
+        $stmt = $this->pdo->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function listarFanficsPorCategoria($categoria_id) {
         $sql = "SELECT * FROM fanfic WHERE categoria_id = :categoria_id";
         $sql = "SELECT * FROM fanfic WHERE categoria_id = :categoria_id ORDER BY titulo ASC";
@@ -34,6 +40,6 @@ class FanficModel {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }    
-    
+
 }
 ?>

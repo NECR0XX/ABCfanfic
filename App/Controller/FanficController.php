@@ -18,6 +18,10 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics($user_id);
         return $fanfics;
     }
+    
+    public function listarFanfics2() {
+        return $this->equipeModel->listarFanfics2();
+    }
 
     public function listarFanficsPorCategoria($categoria_id) {
         $fanfics = $this->fanficModel->listarFanficsPorCategoria($categoria_id);
@@ -28,6 +32,6 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics();
         include '../../Resources/View/fanfics/lista.php';
     }
-    
+
 }
 ?>
