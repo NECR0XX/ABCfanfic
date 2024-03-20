@@ -21,7 +21,7 @@ body {
   
   .container2 {
     width: 1178px;
-    height: 550px;
+    height: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -214,3 +214,26 @@ select:focus {
   height: 0;
 }
 
+.botao-voltar {
+  float:left;
+  background-color: #8886b1; /* Cor de fundo */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento de texto */
+  display: inline-block; /* Exibição em bloco */
+  font-size: 13px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margem */
+  cursor: pointer; /* Cursor */
+  border-radius: 8px; /* Raio da borda */
+}
+.botao-voltar:hover {
+  background-color: #9e9bcc; /* Cor de fundo no hover */
+}
+.botao-voltar:active {
+  background-color: #6e6c8e; /* Cor de fundo quando pressionado */
+}
+a {
+  color: white;
+  text-decoration: none;
+}

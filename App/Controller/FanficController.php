@@ -1,5 +1,5 @@
 <?php
-require_once '../../App\Model\FanficModel.php';
+require_once 'C:\xampp\htdocs\ABCfanfic\App\Model\FanficModel.php';
 
 class FanficController {
     private $fanficModel;
@@ -18,6 +18,10 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics($user_id);
         return $fanfics;
     }
+    
+    public function listarFanfics2() {
+        return $this->fanficModel->listarFanfics2();
+    }
 
     public function listarFanficsPorCategoria($categoria_id) {
         $fanfics = $this->fanficModel->listarFanficsPorCategoria($categoria_id);
@@ -28,5 +32,6 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics();
         include '../../Resources/View/fanfics/lista.php';
     }
+
 }
 ?>
