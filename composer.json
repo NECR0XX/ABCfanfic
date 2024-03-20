@@ -1,0 +1,11 @@
+{
+    "name": "fanfic/fanfic",
+    "autoload": {
+        "psr-4": {
+            "Fanfic\\Fanfic\\": "src/"
+        }
+    },
+    "require": {
+        "blackknight467/star-rating-bundle": "2.*"
+    }
+}
