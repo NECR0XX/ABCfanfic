@@ -36,7 +36,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
                     echo "<a style='color:black;' href='../../App/Providers/deletarcap.php?id={$cap['id_capitulo']}'>Deletar</a>" . "<br><br><br>";
                 }
             } else {
-                echo "<h3>Você ainda não postou nenhum capítulo na sua fanfic. <a href='capost.php?fanfic_id={$fanfics[0]['id_fanfic']}'>Quer adicionar um?</a></h3>";
+                echo "<h3>Você ainda não postou nenhum capítulo na sua fanfic.</h3>";
             }
         ?>
 
