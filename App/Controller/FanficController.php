@@ -28,5 +28,6 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics();
         include '../../Resources/View/fanfics/lista.php';
     }
+    
 }
 ?>
