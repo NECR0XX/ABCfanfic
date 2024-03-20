@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\Fanfic_teste\App\Model\FanficModel.php';
+require_once '../../App\Model\FanficModel.php';
 
 class FanficController {
     private $fanficModel;
