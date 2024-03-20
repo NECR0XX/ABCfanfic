@@ -35,13 +35,14 @@ if (isset($_POST['titulo']) &&
 </head>
 <body>
     <header>
-        <a href="perfil.php">Voltar</a>
-        <h1>Fanfic</h1>
+       
     </header>
     
     <div class="container2">
     <div class="container">
+
         <form action="post.php" method="post" enctype="multipart/form-data">
+        <button class="botao-voltar"><a href="perfil.php">⇦Voltar</a></button><br><br>
 
         <div id="placeholder" onclick="selectImage()">
             <img id="imagePreview" src="../../Resources/Assets/Uploads/Capa.png" alt="Placeholder">

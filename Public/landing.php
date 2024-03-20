@@ -38,8 +38,9 @@ session_start();
             <?php else: ?>
             <?php endif; ?>
             <a href="User/sobre.php">Sobre</a>
+            <a href="User/perfil.php">Perfil</a>
         </div>
-
+<section>
         <div class="topicsstart">
             <h3>Encontre seus favoritos</h3>
             <hr>
@@ -61,7 +62,7 @@ session_start();
             <a href="topic12.html">•  Programas de televisão</a>
             <a href="topic13.html">•  Jogos de vídeo</a>
             <a href="topic13.html">•  Fandoms sem categoria</a> 
-        </div>  
+        </div>
     </section>
 </body>
 </html>
