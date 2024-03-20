@@ -15,7 +15,7 @@ $caps = $capController->listarCapPorId($id_capitulo);
 </head>
 <body>
     <?php
-        echo "<p><strong>Título: </strong>" . $caps['titulo'] . "</p>";
+        echo $caps['cap'] . "<p><strong>Título: </strong>" . $caps['titulo'] . "</p>";
         echo "<p><strong>Texto: </strong>" . $caps['texto'] . "</p>";
     ?>
     
