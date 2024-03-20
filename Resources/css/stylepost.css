@@ -21,7 +21,7 @@ body {
   
   .container2 {
     width: 1178px;
-    height: 500px;
+    height: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,9 +61,10 @@ body {
     display: none;
   }
 
-.tit {
+  .tit {
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .titi {
@@ -112,3 +113,104 @@ body {
     width: 0;
     height: 0;
 }
+
+/* Estilo básico para o textarea */
+textarea {
+  width: 300px; /* largura do textarea */
+  height: 150px; /* altura do textarea */
+  padding: 10px; /* preenchimento interno */
+  border: 1px solid #ccc; /* borda sólida com cor cinza claro */
+  border-radius: 5px; /* borda arredondada */
+  font-family: Arial, sans-serif; /* família da fonte */
+  font-size: 13px; /* tamanho da fonte */
+  line-height: 1.5; /* altura da linha */
+  resize: vertical; /* permite redimensionar verticalmente */
+}
+
+/* Estilo para quando o textarea estiver focado */
+textarea:focus {
+  border-color: #007bff; /* altera a cor da borda quando focado */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* adiciona uma sombra sutil */
+  outline: none; /* remove a borda de foco padrão */
+}
+
+/* Estilo básico para o textarea */
+input {
+  width: 300px; /* largura do textarea */
+  height: 20px; /* altura do textarea */
+  padding: 10px; /* preenchimento interno */
+  border: 1px solid #ccc; /* borda sólida com cor cinza claro */
+  border-radius: 5px; /* borda arredondada */
+  font-family: Arial, sans-serif; /* família da fonte */
+  font-size: 16px; /* tamanho da fonte */
+  line-height: 1.5; /* altura da linha */
+  resize: vertical; /* permite redimensionar verticalmente */
+}
+
+/* Estilo para quando o textarea estiver focado */
+textarea:focus {
+  border-color: #A8A6E1; /* altera a cor da borda quando focado */
+  box-shadow: 0 0 5px #A8A6E1; /* adiciona uma sombra sutil */
+  outline: none; /* remove a borda de foco padrão */
+}
+
+/* Estilo básico para o select */
+select {
+  width: 322px; /* largura do select */
+  padding: 4px; /* preenchimento interno */
+  border: 1px solid #ccc; /* borda sólida com cor cinza claro */
+  border-radius: 5px; /* borda arredondada */
+  font-family: Arial, sans-serif; /* família da fonte */
+  font-size: 14px; /* tamanho da fonte */
+  line-height: 1.5; /* altura da linha */
+  appearance: none; /* remove estilos padrão do sistema operacional */
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234a5568'%3E%3Cpath d='M10 12l-7-7 1.5-1.5 5.5 5.5 5.5-5.5L17 5z'/%3E%3C/svg%3E") no-repeat right 10px center; /* adiciona uma seta para indicar que é um select */
+  background-size: 10px; /* tamanho da imagem de fundo */
+}
+
+/* Estilo para quando o select estiver focado */
+select:focus {
+  border-color: #A8A6E1; /* altera a cor da borda quando focado */
+  box-shadow: 0 0 5px #A8A6E1; /* adiciona uma sombra sutil */
+  outline: none; /* remove a borda de foco padrão */
+}
+
+.botao {
+  background-color: #A8A6E1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.botao::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+  background-color: #8886b1; /* Altere a cor do botão ao passar o mouse */
+}
+
+.botao:hover::after {
+  width: 0;
+  height: 0;
+}
+
