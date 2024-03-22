@@ -21,6 +21,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
         <div class="container">
         <button class='voltar'><a  href="../landing.php">voltar</a></button>
         <button class='post'><a  href="post.php">post</a></button>
+        <button class='post'><a  href="lista.php">Lista</a></button>
         <h1>Adicionar Histórias | Histórias Excluidas</h1>
         <?php
 if (count($fanfics) > 0) {
