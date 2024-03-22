@@ -47,21 +47,19 @@ session_start();
         </div>
     
         <div class="topics">
-            <a href="topic1.html">•  Todos os fãs</a>
-            <a href="topic2.html">•  Anime e mangá</a>
-            <a href="topic3.html">•  Livros e Literatura</a>
-            <a href="topic4.html">•  Desenhos animados e HQS</a>
-            <a href="topic5.html">•  Celebridades e pessoas reais</a>
+            <a href="User/tags/fantasia.php?categoria_id=1">•  Fantasia</a>
+            <a href="User/tags/terror.php?categoria_id=2">•  Terror</a>
+            <a href="User/tags/romance.php?categoria_id=3">•  Romance</a>
+            <a href="User/tags/drama.php?categoria_id=4">•  Drama</a>
+            <a href="User/tags/aventura.php?categoria_id=5">•  Aventura</a>
         </div>
         
         <div class="topics2">
-            <a href="topic8.html">•  Filmes</a>
-            <a href="topic9.html">•  Música e Bandas</a>
-            <a href="topic10.html">•  Outras mídias</a>
-            <a href="topic11.html">•  Teatro</a>
-            <a href="topic12.html">•  Programas de televisão</a>
-            <a href="topic13.html">•  Jogos de vídeo</a>
-            <a href="topic13.html">•  Fandoms sem categoria</a> 
+            <a href="User/tags/suspense.php?categoria_id=6">•  Suspense</a>
+            <a href="User/tags/acao.php?categoria_id=7">•  Ação</a>
+            <a href="User/tags/comedia.php?categoria_id=8">•  Comédia</a>
+            <a href="User/tags/guerra.php?categoria_id=9">•  Guerra</a>
+            <a href="User/tags/luta.php?categoria_id=10">•  Luta</a>
         </div>
     </section>
 </body>
