@@ -49,7 +49,6 @@ class CapController {
             return false;
         }
     }
-    
 
     public function exibirListaCaps() {
         $caps = $this->capModel->listarCaps();
