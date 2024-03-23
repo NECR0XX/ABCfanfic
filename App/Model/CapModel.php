@@ -21,6 +21,12 @@ class CapModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }  
 
+    public function listarCapsdom() {
+        $sql = "SELECT * FROM capitulos";
+        $stmt = $this->pdo->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function listarCapPorId($id_capitulo) {
         $query = "SELECT * FROM capitulos WHERE id_capitulo = :id_capitulo";
         $stmt = $this->pdo->prepare($query);

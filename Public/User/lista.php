@@ -1,19 +1,29 @@
 <?php
-
 require_once '../../Config/config.php';
 require_once '../../App/Controller/CapController.php';
 require_once '../../App/Controller/FanficController.php';
+require_once '../../App/Controller/FavoritoController.php';
 
 $capController = new CapController($pdo);
-$caps = $capController->listarCaps($fanfic_id);
+$caps = $capController->listarCapsdom();
 
 $fanficController = new FanficController($pdo);
-$fanfics = $fanficController->listarFanfics($user_id);
+$fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
+
+$favoritoController = new FavoritoController($pdo);
+$favoritos = $favoritoController->listarFavoritos($_SESSION['usuarioId']);
 
 $html = '<h2>Lista de Capitulos</h2>
 <ul>';
 foreach ($caps as $cap) {
     $html .= '<li>' . $cap['id_capitulo'] . ' - ' . $cap['cap'] . ' Titulo - ' . $cap['titulo'] . ' - ' . $cap['texto'] . ' - ' . $cap['fanfic_id'] . '</li>';
+}
+$html .= '</ul>
+
+<h2>Lista de Favoritos</h2>
+<ul>';
+foreach ($favoritos as $favorito) {
+    $html .= '<li>' . $favorito['id_favorito'] . ' - ' . $favorito['fanfic_imagem'] . ' Anos - ' . $favorito['fanfic_titulo'] . ' - ' . $favorito['user_id'] . ' - ' . $favorito['fanfic_id'] . '</li>';
 }
 $html .= '</ul>
 

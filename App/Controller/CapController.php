@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\ABCfanfic\App\Model\CapModel.php';
+require_once 'C:\xampp\htdocs\Fanfic\App\Model\CapModel.php';
 
 class CapController {
     private $capModel;
@@ -16,6 +16,11 @@ class CapController {
 
     public function listarCaps($fanfic_id) {
         $caps = $this->capModel->listarCaps($fanfic_id);
+        return $caps;
+    }
+
+    public function listarCapsdom() {
+        $caps = $this->capModel->listarCapsdom();
         return $caps;
     }
 
