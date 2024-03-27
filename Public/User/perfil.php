@@ -11,6 +11,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Resources/css/styleperfil.css">
+    <link rel="stylesheet" href="../../Resources/css/styleperfilresp.css">
     <title>Document</title>
 </head>
 <body>
