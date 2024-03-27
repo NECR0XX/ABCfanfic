@@ -61,6 +61,13 @@ session_start();
             <a href="User/tags/guerra.php?categoria_id=9">•  Guerra</a>
             <a href="User/tags/luta.php?categoria_id=10">•  Luta</a>
         </div>
+        <div class="search">
+            <form id="search-form">
+                <input type="search" id="search-input" placeholder="Pesquisar">
+                    <ul id="suggestions"></ul>
+            </form>
+        </div>
+    <script src="../Resources/Js/search.js"></script>
     </section>
 </body>
 </html>

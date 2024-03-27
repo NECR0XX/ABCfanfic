@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\Fanfic\App\Model\FavoritoModel.php';
+require_once 'C:\xampp\htdocs\ABCFanfic\App\Model\FavoritoModel.php';
 
 class FavoritoController {
     private $pdo;

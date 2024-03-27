@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\Fanfic\App\Model\CapModel.php';
+require_once 'C:\xampp\htdocs\ABCFanfic\App\Model\CapModel.php';
 
 class CapController {
     private $capModel;
