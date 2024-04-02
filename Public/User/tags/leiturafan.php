@@ -21,6 +21,9 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/starrating/css/rating.css') }}" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="{{ asset('bundles/starrating/js/rating.js') }}"></script>
     <title>Document</title>
 </head>
 <body>
@@ -55,6 +58,16 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
     foreach ($caps as $cap) {
         echo "<a href='leituracap.php?id_capitulo={$cap['id_capitulo']}'>" . $cap['cap'] . "</a><br>";
     }
+    
     ?>
+     <div class="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../Js/rate.js"></script>
 </body>
 </html>
