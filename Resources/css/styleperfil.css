@@ -1,29 +1,158 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
     background-size: 350px;
 }
 
-
-header a {
-    color: #fff;
+/* CABECALHO */
+img.logo {
+    width: 80px;
+    height: 80px;
+    left: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.cabpri {
+    width: 100vw;
+    display: flex;
+    background-color: #A8A6E1;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabpri h1 {
+    font-size: 60px;
+    font-family: inter;
+}
+.cabpri h3 a {
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 900px;
+    font-family: inter;
+    color: #000000;
+    align-self: center;
+    width: 20px;
 }
-.container{
-background-color: #D9D9D9;
-align-items: center;
-text-align: center;
+
+.acess {
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0;
 }
+.acess button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: rgb(222, 213, 255);
+}
+.acess button:hover{
+    background: rgb(120, 102, 189);
+    color: white;
+}
+.cabsec {
+    display: flex;
+    background-color: rgba(78, 67, 123, 1);
+    width: 100vw;
+    height: 50px;
+    justify-content: space-between;
+}
+.cabsec a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 35px;
+    font-family: inter;
+    align-self: center;
+    margin-left: 44px;
+}
+.cabsec a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.bots {
+    display: flex;
+}
+
+/* BARRA DE PESQUISA */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0;
+}
+
+.search input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.313rem;
+    padding: 0 10px 0 15px;
+    font-size: 1.125rem;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    font-family: 'Abel', sans-serif;
+}
+
+.search.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+.search .list {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 17.5rem;
+}
+
+#suggestions {
+    font-family: inter;
+    background: whitesmoke;
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 83.5%;
+    cursor: default;
+    border-radius: 3px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.search.active #suggestions {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    margin: 0;
+    z-index: 100;
+}
+
+.search.active #suggestions li {
+    display: block;
+}
+
+#suggestions li:hover {
+    background: #efefef;
+}
+
 .container2 {
     background-color: #EDEDED;
     padding: 100px;
     margin: 140px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container{
+background-color: #D9D9D9;
+align-items: center;
+text-align: center;
 }
 
 .container2 h1 {
