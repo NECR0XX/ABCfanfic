@@ -247,3 +247,61 @@ text-align: center;
 .voltar:hover {
     background-color: #ffdb4d;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .bots {
+        justify-content: center;
+    }
+
+    .cabpri {
+        height: auto;
+        justify-content: center; /* centraliza verticalmente */
+    }
+
+    .cabpri h1 {
+        font-size: 30px;
+    }
+
+    .cabpri h3 a {
+        margin-left: 0; /* remove a margem */
+    }
+
+    .acess {
+        padding: 10px 0; /* reduz o preenchimento */
+    }
+
+    .search,
+    .acess {
+        padding: 10px 0; /* reduz o preenchimento */
+    }
+
+    .cabsec {
+        height: auto;
+        flex-direction: column; /* alinha os itens verticalmente */
+        justify-content: center; /* centraliza verticalmente */
+    }
+
+    .cabsec a {
+        margin: 5px 0; /* reduz a margem */
+    }
+    .search {
+        display: none;
+    }
+.procurar {
+    display: flex;
+}
+
+.infog {
+    width: 350px;
+    margin-left: 10px;
+}
+
+.voltar {
+    padding: 5px 10px;
+}
+
+.acess button {
+    margin-left: 20px;
+}
+}

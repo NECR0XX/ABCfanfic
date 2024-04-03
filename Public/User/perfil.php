@@ -41,6 +41,8 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="sobre.php">Sobre</a>
+                <a class="procurar" href="User/search.php">Procurar</a>
+
             </div>
             <div class="search">
                 <form id="search-form">
