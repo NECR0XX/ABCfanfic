@@ -23,13 +23,13 @@
         
         <div class="cabsec">
             <div class="bots">
-                <a href="User/tags.php">Tags</a>
+                <a href="tags.php">Tags</a>
                 <?php
                     if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
                     <a href="User/perfil.php">perfil</a><br>
                 <?php else: ?>
                 <?php endif; ?>
-                <a href="User/sobre.php">Sobre</a>
+                <a href="gsobre.php">Sobre</a>
                 <a class="procurar" href="User/search.php">Procurar</a>
 
             </div>
