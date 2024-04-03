@@ -33,12 +33,9 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics();
         include '../../Resources/View/fanfics/lista.php';
     }
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            new blackknight467\StarRatingBundle\StarRatingBundle(),
-        );
+    public function saveRating($fanficId, $rating) {
+        echo "Salvando avaliação para a fanfic de ID: $fanficId com a avaliação: $rating";
+        $this->fanficModel->saveRating($fanficId, $rating);
     }
 }
 ?>

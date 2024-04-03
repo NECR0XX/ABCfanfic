@@ -1,0 +1,15 @@
+/* Estilos apenas para visualização */
+.item {
+    margin-bottom: 20px;
+}
+/* Estilos para estrelas não avaliadas */
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+/* Estilos para estrelas avaliadas */
+.star.rated {
+    color: yellow;
+}

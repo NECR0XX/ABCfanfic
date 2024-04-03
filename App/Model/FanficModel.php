@@ -42,6 +42,20 @@ class FanficModel {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }    
-
+    public function saveRating($fanficId, $rating) {
+        try {
+            $stmt = $this->pdo->prepare("UPDATE fanfic SET avaliacao_total = avaliacao_total + :rating, numero_avaliacoes = numero_avaliacoes + 1 WHERE id_fanfic = :fanficId");
+            $stmt->execute(array(
+                ':rating' => $rating,
+                ':fanficId' => $fanficId
+            ));
+            return true; // Retorna verdadeiro se a atualização for bem-sucedida
+        } catch (PDOException $e) {
+            // Captura e imprime quaisquer erros de exceção
+            echo "Erro ao salvar avaliação: " . $e->getMessage();
+            return false; // Retorna falso se ocorrer um erro
+        }
+    }
+    
 }
 ?>
