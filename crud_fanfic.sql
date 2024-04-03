@@ -334,6 +334,28 @@ ALTER TABLE `log_cad`
 --
 ALTER TABLE `capitulos`
   ADD CONSTRAINT `capitulos_fanfic_id_FK` FOREIGN KEY (`fanfic_id`) REFERENCES `fanfic` (`id_fanfic`);
+CREMENT, AUTO_INCREMENT=12;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `capitulos`
+--
+ALTER TABLE `capitulos`
+  ADD CONSTRAINT `capitulos_fanfic_id_FK` FOREIGN KEY (`fanfic_id`) REFERENCES `fanfic` (`id_fanfic`);
+NCREMENT, AUTO_INCREMENT=12;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `capitulos`
+--
+ALTER TABLE `capitulos`
+  ADD CONSTRAINT `capitulos_fanfic_id_FK` FOREIGN KEY (`fanfic_id`) REFERENCES `fanfic` (`id_fanfic`);
 
 --
 -- Limitadores para a tabela `fanfic`

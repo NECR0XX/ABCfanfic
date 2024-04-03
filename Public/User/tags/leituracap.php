@@ -18,10 +18,15 @@ $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps[
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/css\leiturafan.css" />
     <title>Document</title>
 </head>
 <body>
-    <?php
+    <section>
+        <div class="container">
+        <?php
         if ($caps) {
             $id_fanfic = $caps['fanfic_id'];
             echo "<a href='leiturafan.php?fanfic_id=$id_fanfic'>Voltar para a fanfic</a>";
@@ -45,5 +50,7 @@ $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps[
             echo "<p>Não foi possível encontrar o capítulo atual.</p>";
         }
     ?>
+        </div>
+    </section>
 </body>
 </html>

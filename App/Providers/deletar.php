@@ -1,11 +1,11 @@
 <?php
 include '../../Config/config.php';
 
-if (!isset($_GET['id'])) { 
+if (!isset($_GET['id_fanfic'])) { 
     header('Location: ../../Public/User/perfil.php');
     exit;
 }
-$id_fanfic = $_GET['id'];
+$id_fanfic = $_GET['id_fanfic'];
 $stmt = $pdo->prepare('SELECT * FROM fanfic WHERE id_fanfic = ?');
 $stmt->execute ([$id_fanfic]);
 $appointment = $stmt->fetch(PDO::FETCH_ASSOC);
