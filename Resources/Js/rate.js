@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.star').on('click', function(){
         var rating = $(this).data('rating');
-        var fanficId = $(this).closest('.item').data('id');
+        var fanficId = $(this).data('fanficid');
         
         // Remove a classe 'rated' de todas as estrelas no mesmo item
         $(this).siblings().removeClass('rated');
@@ -11,7 +11,7 @@ $(document).ready(function(){
         $.ajax({
             url: 'save_rating.php',
             method: 'POST',
-            data: { rating: rating, fanficId: fanficId },
+            data: { rating: rating, fanficid: fanficId },
             success: function(response){
                 console.log('Avaliação salva com sucesso!');
             },

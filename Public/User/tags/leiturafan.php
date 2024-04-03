@@ -59,11 +59,11 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
     
     ?>
      <div class="rating">
-            <span class="star" data-rating="1">&#9733;</span>
-            <span class="star" data-rating="2">&#9733;</span>
-            <span class="star" data-rating="3">&#9733;</span>
-            <span class="star" data-rating="4">&#9733;</span>
-            <span class="star" data-rating="5">&#9733;</span>
+            <span class="star" data-rating="1" data-fanficid= "<?php echo $fanfics['id_fanfic']; ?>">&#9733;</span>
+            <span class="star" data-rating="2" data-fanficid= "<?php echo $fanfics['id_fanfic']; ?>">&#9733;</span>
+            <span class="star" data-rating="3" data-fanficid= "<?php echo $fanfics['id_fanfic']; ?>">&#9733;</span>
+            <span class="star" data-rating="4" data-fanficid= "<?php echo $fanfics['id_fanfic']; ?>">&#9733;</span>
+            <span class="star" data-rating="5" data-fanficid= "<?php echo $fanfics['id_fanfic']; ?>">&#9733;</span>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../../Resources/Js/rate.js"></script>
