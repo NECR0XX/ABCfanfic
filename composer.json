@@ -6,6 +6,7 @@
         }
     },
     "require": {
-        "blackknight467/star-rating-bundle": "2.*"
+        "blackknight467/star-rating-bundle": "2.*",
+        "dompdf/dompdf": "^2.0"
     }
 }

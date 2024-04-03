@@ -14,7 +14,7 @@ function loadImage(event) {
   reader.onload = function() {
       const imageUrl = reader.result;
       const imagePreview = document.getElementById('imagePreview');
-      imagePreview.src = imageUrl; // Atualiza a imagem exibida
+      imagePreview.src = imageUrl;
   }
   
   if (file) {

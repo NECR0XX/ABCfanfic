@@ -1,15 +1,20 @@
 <?php
 session_start();
+require_once '../../Config/config.php';
+require_once '../../App/Controller/FavoritoController.php';
+
+$favoritoController = new FavoritoController($pdo);
+$favoritos = $favoritoController->listarFavoritos($_SESSION['usuarioId']);
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <title>Sobre Nós</title>
-    <link rel="stylesheet" href="../../Resources/css/stylesobre.css">
+    <link rel="stylesheet" href="../../Resources/css/stylefavo.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -45,17 +50,25 @@ session_start();
                     </div>
                 <script src="../../Resources/Js/search.js"></script>
             </div>
-    </header>   
+    </header>
     <section>
-        <div class="container2">
-            <div class="container">
-                <div class="ret">
-                    <h1>Sobre Nós</h1>
-                </div>
-                <p>A Abc Fanfiction é uma organização sem fins lucrativos, criada por fãs em 2007, para servir os interesses dos fãs, fornecendo acesso e preservando a história das obras de fãs e da cultura de fãs em suas inúmeras formas. Acreditamos que as obras de fãs são transformadoras e que as obras transformadoras são legítimas.
-                Somos proativos e inovadores na proteção e defesa do nosso trabalho contra a exploração comercial e desafios legais. Preservamos nossa economia, valores e expressão criativa de fãs, protegendo e nutrindo nossos colegas fãs, nosso trabalho, nossos comentários, nossa história e nossa identidade, ao mesmo tempo em que fornecemos o acesso mais amplo possível à atividade de fãs para todos os fãs.</p>
-                <p>A Abc oferece um local de hospedagem central não comercial e sem fins lucrativos para obras de fãs usando software de arquivamento de código aberto.</p>
-            </div>
+        <div class="favbox">
+            <h1>Seus Favoritos</h1>
+            <?php
+            if (count($favoritos) > 0) {
+                foreach ($favoritos as $favorito) {
+                    echo "<a href='tags/leiturafan.php?fanfic_id={$favorito['fanfic_id']}'><p><strong>Título: </strong>{$favorito['fanfic_titulo']}</p></a>";
+                    if (!empty($favorito['fanfic_imagem'])) {
+                        echo '<img src="' . $favorito['fanfic_imagem'] . '" alt="Imagem do favorito" width="100">';
+                    } else {
+                        echo 'Sem Imagem';
+                    }
+                }
+            }
+                    else {
+                echo "<h3>Você ainda não adicionou nenhuma fanfic aos favoritos.";
+            }
+            ?>
         </div>
     </section>
 </body>

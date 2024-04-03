@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\ABCfanfic\App\Model\FanficModel.php';
+require_once 'C:\xampp\htdocs\ABCFanfic\App\Model\FanficModel.php';
 
 class FanficController {
     private $fanficModel;
@@ -33,6 +33,9 @@ class FanficController {
         $fanfics = $this->fanficModel->listarFanfics();
         include '../../Resources/View/fanfics/lista.php';
     }
-
+    public function saveRating($fanficId, $rating) {
+        echo "Salvando avaliação para a fanfic de ID: $fanficId com a avaliação: $rating";
+        $this->fanficModel->saveRating($fanficId, $rating);
+    }
 }
 ?>
