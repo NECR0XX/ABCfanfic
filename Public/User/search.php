@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <form action="" class="search-box" method="GET" target="_blank">
-            <input type="text" name="q" placeholder="Search...">
-            <input type="submit" value="Search">
+            <input type="text" name="q" placeholder="Escreva aqui...">
+            <input type="submit" value="Pesquisar">
         </form>
     </div>
 </body>

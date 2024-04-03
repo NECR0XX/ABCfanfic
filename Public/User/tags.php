@@ -36,7 +36,7 @@ session_start();
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="sobre.php">Sobre</a>
-                <a class="procurar" href="User/search.php">Procurar</a>
+                <a class="procurar" href="search.php">Procurar</a>
 
             </div>
             <div class="search">
@@ -49,6 +49,9 @@ session_start();
             </div>
     </header>   
     <section>
+        <div class="container2">
+            <h1 class= "tag2"><a href="../landing.php">Abc fanfiction</h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag"> Tags </h1> 
+    </div>
         <div class="container">
             <a href="../landing.php">Voltar</a><br><br>
             <a href="tags/fantasia.php?categoria_id=1">Fantasia</a><br>

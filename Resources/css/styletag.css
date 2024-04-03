@@ -160,3 +160,41 @@ img.logo {
     text-decoration: none;
     color: #000000;
 }
+.container2 {
+    margin: 2% 0 0 20%;
+    display: flex;
+    max-width: 900px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgb(192, 192, 192);
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.tag {
+    flex-direction: row;
+    display: inline; /* ou display: inline; */
+    margin-right: 10px;
+}
+.tag2 {
+    flex-direction: row;
+    display: inline; /* ou display: inline; */
+    margin-right: 10px;
+    color: #A8A6E1;
+}
+
+a {
+    text-decoration: none;
+    color: #A8A6E1;
+}
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}

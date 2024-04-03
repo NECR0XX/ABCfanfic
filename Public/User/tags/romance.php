@@ -56,23 +56,43 @@ if (isset($_GET['categoria_id'])) {
             </div>
     </header>
     <section>
+    <div class="container2">
+            <h1 class= "tag2"><a href="../landing.php">Abc fanfiction</h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag2"><a href="../tags.php"> Tags </h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag"> Romance </h1>
+    </div>
         <div class="fanfic-container">
             <?php
                 foreach ($fanfics as $fanfic) {
                     echo "<div class='fanfic'>";
-                    echo "<a href='leiturafan.php?fanfic_id={$fanfic['id_fanfic']}'><p><strong>Título: </strong>{$fanfic['titulo']}</p></a>";
-                    echo "<p><strong>Autor: </strong>{$fanfic['nome_user']}</p>";
+                    echo "<h1>{$fanfic['titulo']}</h1>";
+                
+                    echo "<div style='display: flex;'>";
+                    // Imagem do fanfic
                     if (!empty($fanfic['imagem'])) {
                         echo '<img src="../' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
                     } else {
                         echo 'Sem Imagem';
                     }
-                    echo "<p><strong>Status: </strong>";
+                
+                    // Conteúdo à direita da imagem
+                    echo "<div style='margin-left: 10px;'>";
+                    // Status do fanfic
+                    echo "<div>";
                     if ($fanfic['concluido']) {
                         echo "Concluído";
                     } else {
                         echo "Em andamento";
                     }
+                    echo "</div>";
+                
+                    // Número de capítulos
+                    echo "<div>";
+                    echo "<p>Capítulos: </p>";
+                    echo "</div>";
+                    
+                    echo "<a href='leiturafan.php?fanfic_id={$fanfic['id_fanfic']}'><p><strong>Título: </strong>{$fanfic['titulo']}</p></a>";
+                    echo "<p><strong>Autor: </strong>{$fanfic['nome_user']}</p>";
+                    
+                    
                     echo "</p>";
                     echo "</div>";
                 }
