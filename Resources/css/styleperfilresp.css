@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    body {
+      background-size: cover; 
+    }
+  
+    .container2 {
+      padding: 20px; 
+      margin: 20px; 
+    }
+  
+    .container2 h1 {
+      font-size: 20px; 
+    }
+  
+    .fanfic img {
+      max-width: 80px; 
+      margin-right: 5px; 
+      margin-bottom: 5px; 
+    }
+  }
+  
+  
+  @media only screen and (min-width: 769px) {
+  }
+  

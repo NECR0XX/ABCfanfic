@@ -13,6 +13,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="../../Resources/css/styleperfil.css">
+    <link rel="stylesheet" href="../../Resources/css/styleperfilresp.css">
     <title>Document</title>
 </head>
 <body>
@@ -40,6 +41,8 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="sobre.php">Sobre</a>
+                <a class="procurar" href="User/search.php">Procurar</a>
+
             </div>
             <div class="search">
                 <form id="search-form">

@@ -29,6 +29,7 @@ if (isset($_POST['titulo']) &&
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Resources/css/stylepost.css">
+    <link rel="stylesheet" href="../../Resources/css/stylepostresp.css">
     <script src="../../Resources/Js/script.js"></script>
     <link rel="shortcut icon" href="Public/Assets/_31554896-b491-466e-b129-d77e088c3b0c-removebg-preview.png" type="image/x-icon">
     <title>Document</title>

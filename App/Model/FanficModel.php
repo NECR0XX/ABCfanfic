@@ -49,12 +49,32 @@ class FanficModel {
                 ':rating' => $rating,
                 ':fanficId' => $fanficId
             ));
-            return true; // Retorna verdadeiro se a atualização for bem-sucedida
-        } catch (PDOException $e) {
-            // Captura e imprime quaisquer erros de exceção
-            echo "Erro ao salvar avaliação: " . $e->getMessage();
-            return false; // Retorna falso se ocorrer um erro
+            $stmt = $this->pdo->prepare("SELECT avaliacao_total, numero_avaliacoes FROM fanfic WHERE id_fanfic = :fanficId");
+        $stmt->execute(array(':fanficId' => $fanficId));
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        $avaliacao_total = $result['avaliacao_total'];
+        $numero_avaliacoes = $result['numero_avaliacoes'];
+
+        if ($numero_avaliacoes > 0) {
+            $media = $avaliacao_total / $numero_avaliacoes;
+        } else {
+            $media = 0;
         }
+
+        // Atualize a média na tabela fanfic
+        $stmt = $this->pdo->prepare("UPDATE fanfic SET media = :media WHERE id_fanfic = :fanficId");
+        $stmt->execute(array(
+            ':media' => $media,
+            ':fanficId' => $fanficId
+        ));
+        
+        return true; // Retorna verdadeiro se a atualização for bem-sucedida
+    } catch (PDOException $e) {
+        // Captura e imprime quaisquer erros de exceção
+        echo "Erro ao salvar avaliação: " . $e->getMessage();
+        return false; // Retorna falso se ocorrer um erro
+    }
     }
     
 }

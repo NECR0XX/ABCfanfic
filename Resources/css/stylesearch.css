@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
+}
+.container {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+.search-box {
+    display: flex;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-box input[type="text"] {
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.search-box input[type="submit"] {
+    border: none;
+    background-color: #A8A6E1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
