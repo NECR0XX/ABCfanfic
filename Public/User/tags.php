@@ -30,7 +30,6 @@ session_start();
         <div class="cabsec">
             <div class="bots">
                 <a href="tags.php">Tags</a>
-                <a href="tags.php">Tags</a>
                 <?php
                     if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
                     <a href="perfil.php">perfil</a><br>
