@@ -2,8 +2,7 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 03-Abr-2024 às 19:21
+-- Host: 127.0.-- T-- Tempo de geração: 03-Abr-2024 às 03:37
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -124,77 +123,7 @@ INSERT INTO `fanfic` (`id_fanfic`, `imagem`, `titulo`, `sinopse`, `categoria_id`
 (34, '../../Resources/Assets/Uploads/a7e2fef79d760132ddd26844d3d5137b.jpg', 'Gato Foda', 'Gato Fodastico', 7, 'Wesley', 2, 0),
 (35, '../../Resources/Assets/Uploads/b21811110470a022d098c50fb2ecb422.jpg', 'Curvo', 'Heheheheheheh', 7, 'Wesley', 2, 0),
 (36, '../../Resources/Assets/Uploads/Linguagens.PNG', 'Enem', 'Poha', 7, 'Wesley', 2, 0),
-(37, '../../Resources/Assets/Uploads/a7e2fef79d760132ddd26844d3d5137b.jpg', 'CRL', 'GATO FODA', 7, 'Wesley', 2, 0),
-(38, '../../Resources/Assets/Uploads/—— Cabin 05.jfif', 'ares', 'aaaaaaaaaaares', 1, 'Wesley', 2, 0),
-(39, '../../Resources/Assets/Uploads/—— Cabin 12.jfif', 'dionisio', 'ddddddddddionisio', 1, 'Wesley', 2, 0),
-(40, '../../Resources/Assets/Uploads/—— Cabin 06.jfif', 'atena', 'aaaaaaaaatena', 1, 'Wesley', 2, 0),
-(41, '../../Resources/Assets/Uploads/——Cabin 08.jfif', 'artemis', 'aaaaaaaaaartemis', 1, 'Wesley', 2, 0),
-(42, '../../Resources/Assets/Uploads/⚡︎ ꒷₊˚» ˖_ ➷｡꒷₊˚⤜.jfif', 'afrodite', 'aaaaaaaaaafrodite', 1, 'Wesley', 2, 0),
-(43, '../../Resources/Assets/Uploads/Children of Zeus - Aesthetic.jfif', 'zeus', 'zzzzzzzzzzzzeus', 1, 'Wesley', 2, 0),
-(44, '../../Resources/Assets/Uploads/—— Cabin 11.jfif', 'hermes', 'hhhhhhhhhermes', 1, 'Wesley', 2, 0),
-(45, '../../Resources/Assets/Uploads/—— Cabin 03.jfif', 'poseidon', 'ppppppppposeidon', 1, 'Wesley', 2, 0),
-(46, '../../Resources/Assets/Uploads/download (8).jfif', 'hera', 'hhhhhhhhhhera', 1, 'Wesley', 2, 0),
-(47, '../../Resources/Assets/Uploads/download (9).jfif', 'terror', 'terror uiui', 2, 'Wesley', 2, 0),
-(48, '../../Resources/Assets/Uploads/download (9).jfif', 'terror', 'rerror aai', 2, 'Wesley', 2, 0),
-(49, '../../Resources/Assets/Uploads/download (9).jfif', 'terror', 'susto', 2, 'Wesley', 2, 0),
-(50, '../../Resources/Assets/Uploads/download (9).jfif', 'a hora do pesadelo', 'aaaaaaaaaaaaaaaaaaaa', 2, 'Wesley', 2, 0),
-(51, '../../Resources/Assets/Uploads/download (9).jfif', 'jogos mortais sasasjahsahs', 'ASDFGHJKLÇKJHGFDSssaa', 2, 'Wesley', 2, 0),
-(52, '../../Resources/Assets/Uploads/download (9).jfif', 'it a coisa', 'hahahahahahah', 2, 'Wesley', 2, 0),
-(53, '../../Resources/Assets/Uploads/download (9).jfif', 'rua do medo', 'aaaaaaaaaaaaahhh', 2, 'Wesley', 2, 0),
-(54, '../../Resources/Assets/Uploads/download (9).jfif', 'ordem paranormal', 'cpt', 2, 'Wesley', 2, 0),
-(55, '../../Resources/Assets/Uploads/download (10).jfif', 'o senhor dos aneis', 'wasd', 7, 'Wesley', 2, 0),
-(56, '../../Resources/Assets/Uploads/download (10).jfif', 'o hobbit', 'kjhgfdsa', 7, 'Wesley', 2, 0),
-(57, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem iniciação', 'aaa', 6, 'Wesley', 2, 0),
-(58, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem floresta', 'bbb', 6, 'Wesley', 2, 0),
-(59, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem desconjuração', 'ccc', 6, 'Wesley', 2, 0),
-(60, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem calamidade', 'ddd', 6, 'Wesley', 2, 0),
-(61, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem ilha', 'eee', 6, 'Wesley', 2, 0),
-(62, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem outro lado', 'fff', 6, 'Wesley', 2, 0),
-(63, '../../Resources/Assets/Uploads/download (11).jfif', 'ordem 4tena', 'ggg', 6, 'Wesley', 2, 0),
-(64, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores I', '1', 5, 'Wesley', 2, 0),
-(65, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores II', '2', 5, 'Wesley', 2, 0),
-(66, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores III', '3', 5, 'Wesley', 2, 0),
-(67, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores IV', '4', 5, 'Wesley', 2, 0),
-(68, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores V', '5', 5, 'Wesley', 2, 0),
-(69, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores VI', '6', 5, 'Wesley', 2, 0),
-(70, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores VII', '7', 5, 'Wesley', 2, 0),
-(71, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'vingadores VIII', '8', 5, 'Wesley', 2, 0),
-(72, '../../Resources/Assets/Uploads/download (12).jfif', 'sasasasasa', 'sasas', 8, 'Wesley', 2, 0),
-(73, '../../Resources/Assets/Uploads/download (12).jfif', 'miranha', 'sdfghjkl', 8, 'Wesley', 2, 0),
-(74, '../../Resources/Assets/Uploads/download (12).jfif', 'fic', 'hgfdsasdfghj', 8, 'Wesley', 2, 0),
-(75, '../../Resources/Assets/Uploads/download (12).jfif', 'comédia', 'vingadores', 8, 'Wesley', 2, 0),
-(76, '../../Resources/Assets/Uploads/download (12).jfif', 'mmmmm', 'hgfdxza', 8, 'Wesley', 2, 0),
-(77, '../../Resources/Assets/Uploads/Van Gogh.jpg', 'van gogh', 'jhgfghjklç', 8, 'Wesley', 2, 0),
-(78, '../../Resources/Assets/Uploads/download (12).jfif', 'uiiii', '~sasasasas', 8, 'Wesley', 2, 0),
-(79, '../../Resources/Assets/Uploads/Cabin 13- Hades by zeecyanide _ Redbubble.jfif', 'aaaaaaa', 'ééeééé', 8, 'Wesley', 2, 0),
-(80, '../../Resources/Assets/Uploads/download (13).jfif', 'drama', 'aaaaaaaaaa', 4, 'Wesley', 2, 0),
-(81, '../../Resources/Assets/Uploads/download (9).jfif', 'drama', 'drama D:', 4, 'Wesley', 2, 0),
-(82, '../../Resources/Assets/Uploads/wallpaper.jpg', 'dramático', 'melancolia', 4, 'Wesley', 2, 0),
-(83, '../../Resources/Assets/Uploads/download (1).jpg', 'demonio', 'aaaaaaaaaaaaa', 4, 'Wesley', 2, 0),
-(84, '../../Resources/Assets/Uploads/download (13).jfif', 'drama :D', 'dramaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 4, 'Wesley', 2, 0),
-(85, '../../Resources/Assets/Uploads/3c5b3dec-2db1-4647-8ba2-a48fcbaca211.jfif', 'dramamamam', 'hhahahahahahahahahhaha', 4, 'Wesley', 2, 0),
-(86, '../../Resources/Assets/Uploads/download (14).jfif', 'barras', 'barras e barras e barras', 9, 'Wesley', 2, 0),
-(87, '../../Resources/Assets/Uploads/download (14).jfif', 'guerra :O', 'guerra', 9, 'Wesley', 2, 0),
-(88, '../../Resources/Assets/Uploads/download (14).jfif', 'guarre', 'hhhhhhhhhhhhhh', 9, 'Wesley', 2, 0),
-(89, '../../Resources/Assets/Uploads/download (14).jfif', 'guerras', 'guerra luta uooooooooooooooo', 9, 'Wesley', 2, 0),
-(90, '../../Resources/Assets/Uploads/download (14).jfif', 'Frozen', 'O Senhor Dos Anéis', 9, 'Wesley', 2, 0),
-(91, '../../Resources/Assets/Uploads/download (14).jfif', 'ahsuashaushaushuahsu', 'hahhahahahahah', 9, 'Wesley', 2, 0),
-(92, '../../Resources/Assets/Uploads/download (14).jfif', 'guarre', 'guerra guerra guerra', 9, 'Wesley', 2, 0),
-(93, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'luta', 'luta', 10, 'Wesley', 2, 0),
-(94, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'luta', 'luta', 10, 'Wesley', 2, 0),
-(95, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'luta', 'luta luta luta', 9, 'Wesley', 2, 0),
-(96, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'luta luta', 'luta luta', 10, 'Wesley', 2, 0),
-(97, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'luta', 'lutaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 10, 'Wesley', 2, 0),
-(98, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'lutalutalutaluta', 'lutaluta', 10, 'Wesley', 2, 0),
-(99, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'lutas', 'lutalutalutalutalutalutalutalutalutalutaluta', 10, 'Wesley', 2, 0),
-(100, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'lutaguerraluta', 'lutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutalutaluta', 10, 'Wesley', 2, 0),
-(101, '../../Resources/Assets/Uploads/Sigueme en insta_follow me insta ????????.jfif', 'romance', 'romanceromanceromanceromanceromanceromanceromanceromanceromance', 3, 'Wesley', 2, 0),
-(102, '../../Resources/Assets/Uploads/Sigueme en insta_follow me insta ????????.jfif', 'romance romance', 'romanceromanceromanceromance', 3, 'Wesley', 2, 0),
-(103, '../../Resources/Assets/Uploads/⚡︎ ꒷₊˚» ˖_ ➷｡꒷₊˚⤜.jfif', 'romance', 'romanceromanceromance', 3, 'Wesley', 2, 0),
-(104, '../../Resources/Assets/Uploads/0718aed0-9f59-40c1-8c02-a59fb0cd615d.jfif', 'amor', 'romanceromanceloveloveloveamorromance', 3, 'Wesley', 2, 0),
-(106, '../../Resources/Assets/Uploads/⚡︎ ꒷₊˚» ˖_ ➷｡꒷₊˚⤜.jfif', 'love', 'romanceromanceaaaaaaaaaaaaaaaaa', 3, 'Wesley', 2, 0),
-(107, '../../Resources/Assets/Uploads/skull heart eyes.jfif', 'romance', 'romanceromanceromanceromance', 3, 'Wesley', 2, 0),
-(108, '../../Resources/Assets/Uploads/skull heart eyes.jfif', 'romance', 'aaaaaaaaaaromanceaaaaaaaaaaa', 3, 'Wesley', 2, 0);
+(37, '../../Resources/Assets/Uploads/a7e2fef79d760132ddd26844d3d5137b.jpg', 'CRL', 'GATO FODA', 7, 'Wesley', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -220,8 +149,7 @@ INSERT INTO `favoritos` (`id_favorito`, `fanfic_imagem`, `fanfic_titulo`, `user_
 (4, '../../Resources/Assets/Uploads/download.jpg', 'Alfedo', 2, 20),
 (5, '../../Resources/Assets/Uploads/a7e2fef79d760132ddd26844d3d5137b.jpg', 'CRL', 2, 37),
 (6, '../../Resources/Assets/Uploads/b21811110470a022d098c50fb2ecb422.jpg', 'Curvo', 2, 35),
-(7, '../../Resources/Assets/Uploads/Linguagens.PNG', 'Enem', 2, 36),
-(8, '../../Resources/Assets/Uploads/7695278932c2e062956c227d4c0cef69.jpg', 'Marcos', 2, 15);
+(7, '../../Resources/Assets/Uploads/Linguagens.PNG', 'Enem', 2, 36);
 
 -- --------------------------------------------------------
 
@@ -311,13 +239,13 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de tabela `fanfic`
 --
 ALTER TABLE `fanfic`
-  MODIFY `id_fanfic` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id_fanfic` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de tabela `favoritos`
 --
 ALTER TABLE `favoritos`
-  MODIFY `id_favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_favorito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `log_cad`
