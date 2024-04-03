@@ -47,7 +47,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
                         <ul id="suggestions"></ul>
                 </form>
                     </div>
-                <script src="../../Resources/Js/search.js"></script>
+                <script src="../../Resources/Js/searchuser.js"></script>
             </div>
     </header>   
     <section class="container2">
@@ -82,7 +82,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
                         echo "<p><strong>Sinopse: </strong>" . $fanfic['sinopse'] . "</p><br>";
                     
                         echo "<a style='color:black;' href='../../App/Providers/atualizar.php?id={$fanfic['id_fanfic']}'>Atualizar</a>" . "<br>";
-                        echo "<a style='color:black;' href='../../App/Providers/deletar.php?id={$fanfic['id_fanfic']}'>Deletar</a>" . "<br>";
+                        echo "<a style='color:black;' href='../../App/Providers/deletar.php?id_fanfic={$fanfic['id_fanfic']}'>Deletar</a>" . "<br>";
                         echo "<a style='color:black;' href='capview.php?fanfic_id={$fanfic['id_fanfic']}'>Visualizar Capítulos</a>" . "<br>";
                         if ($fanfic['concluido']){
                         

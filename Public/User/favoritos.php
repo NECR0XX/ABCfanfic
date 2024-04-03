@@ -48,7 +48,7 @@ $favoritos = $favoritoController->listarFavoritos($_SESSION['usuarioId']);
                         <ul id="suggestions"></ul>
                 </form>
                     </div>
-                <script src="../../Resources/Js/search.js"></script>
+                <script src="../../Resources/Js/searchuser.js"></script>
             </div>
     </header>
     <section>

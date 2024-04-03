@@ -2,8 +2,7 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 03-Abr-2024 às 03:37
+-- Host: 127.0.-- T-- Tempo de geração: 03-Abr-2024 às 03:37
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -253,6 +252,28 @@ ALTER TABLE `favoritos`
 --
 ALTER TABLE `log_cad`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `capitulos`
+--
+ALTER TABLE `capitulos`
+  ADD CONSTRAINT `capitulos_fanfic_id_FK` FOREIGN KEY (`fanfic_id`) REFERENCES `fanfic` (`id_fanfic`);
+CREMENT, AUTO_INCREMENT=12;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `capitulos`
+--
+ALTER TABLE `capitulos`
+  ADD CONSTRAINT `capitulos_fanfic_id_FK` FOREIGN KEY (`fanfic_id`) REFERENCES `fanfic` (`id_fanfic`);
+NCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Restrições para despejos de tabelas
