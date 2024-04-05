@@ -36,7 +36,6 @@ session_start();
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="sobre.php">Sobre</a>
-                <a class="procurar" href="search.php">Procurar</a>
 
             </div>
             <div class="search">
