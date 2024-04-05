@@ -147,16 +147,18 @@ img.logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .fanfic {
-    width: 300px;
-    margin: 20px 20px 20px 20px;
+    width: 900px;
+    margin: 2% 0 0 20%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: whitesmoke;
+    background: rgb(192, 192, 192);
+    font-weight: bold;
 }
 
 .fanfic p {
@@ -173,6 +175,75 @@ img.logo {
 
 .fanfic img {
     max-width: 100%;
-    height: auto;
     margin-bottom: 10px;
+}
+.container2 {
+    margin: 2% 0 0 20%;
+    display: flex;
+    max-width: 900px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgb(192, 192, 192);
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.tag {
+    flex-direction: row;
+    display: inline; /* ou display: inline; */
+    margin-right: 10px;
+}
+.tag2 {
+    flex-direction: row;
+    display: inline; /* ou display: inline; */
+    margin-right: 10px;
+    color: #A8A6E1;
+}
+
+a {
+    text-decoration: none;
+    color: #A8A6E1;
+}
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+.sinopse {
+    margin-top: 10px; /* Adiciona margem acima da sinopse */
+    margin-bottom: 10px; /* Adiciona margem abaixo da sinopse */
+    max-height: calc(1.6em * 8); /* Limita a altura em 8 linhas */
+    overflow: hidden; /* Esconde o texto que ultrapassa a altura máxima */
+    position: relative; /* Permite posicionar o link para a fanfic */
+    font-weight: normal;
+}
+
+.sinopse::after {
+    content: ""; /* Cria um conteúdo pseudo-elemento para posicionar o link */
+    position: absolute; /* Posiciona o link absolutamente em relação à sinopse */
+    bottom: 0; /* Alinha o link na parte inferior da sinopse */
+    right: 0; /* Alinha o link à direita da sinopse */
+    background-color: white; /* Fundo branco para cobrir a última linha da sinopse */
+    padding: 0 20px; /* Adiciona espaço ao redor do link */
+}
+
+.sinopse p {
+    margin: 0; /* Remove margens padrão do parágrafo */
+    padding-right: 20px; /* Adiciona espaço à direita do parágrafo para não se sobrepor ao link */
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn a{
+    background-color: #c798ec;
+    padding: 5px 30px 5px 30px;
+    color: #544eff;
 }

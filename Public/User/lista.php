@@ -34,7 +34,7 @@ foreach ($fanfics as $fanfic) {
 }
 $html .= '</ul>';
 
-require_once '../../vendor/autoload.php';
+require_once '../../../vendor/autoload.php';
 
 // referenciando o namespace do dompdf
 use Dompdf\Dompdf;
