@@ -32,7 +32,7 @@ if (isset($_POST['titulo']) &&
     <link rel="stylesheet" href="../../Resources/css/stylepostresp.css">
     <script src="../../Resources/Js/script.js"></script>
     <link rel="shortcut icon" href="Public/Assets/_31554896-b491-466e-b129-d77e088c3b0c-removebg-preview.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Postar</title>
 </head>
 <body>
     <header>

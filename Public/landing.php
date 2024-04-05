@@ -12,7 +12,7 @@ session_start();
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="../Resources/Js/script.js"></script>
-    <title>Document</title>
+    <title>ABC Fanfiction</title>
 </head>
 <body>
     <header>

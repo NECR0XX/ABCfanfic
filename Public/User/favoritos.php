@@ -14,7 +14,7 @@ $favoritos = $favoritoController->listarFavoritos($_SESSION['usuarioId']);
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="../../Resources/css/stylefavo.css">
-    <title>Document</title>
+    <title>Favoritos</title>
 </head>
 <body>
     <header>

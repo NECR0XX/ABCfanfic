@@ -153,12 +153,13 @@ img.logo {
     flex-direction: column;
 }
 .container a{
-    text-decoration: underline;
+    text-decoration: none; /* Remover sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor do texto ao passar o mouse */
     color: #c527ff;
 }
 .container a:hover{
-    text-decoration: none;
-    color: #000000;
+    color: #61197b; /* Mudar a cor do texto ao passar o mouse */
+    font-weight: bold; /* Tornar o texto em negrito */
 }
 .container2 {
     margin: 2% 0 0 20%;
@@ -171,6 +172,16 @@ img.logo {
     align-items: center;
     flex-direction: row;
     text-align: center;
+}
+.container2 a {
+    text-decoration: none; /* Remover sublinhado */
+    color: #A8A6E1; /* Cor do texto normal dos links */
+    transition: color 0.3s; /* Transição suave para a cor do texto ao passar o mouse */
+}
+
+.container2 a:hover {
+    color: #7a78ad; /* Mudar a cor do texto ao passar o mouse */
+    font-weight: bold; /* Tornar o texto em negrito */
 }
 .tag {
     flex-direction: row;

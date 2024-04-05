@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
     background-size: 350px;
+    overflow-x: hidden;
 }
 
 /* CABECALHO */
@@ -167,8 +168,46 @@ img.logo {
     padding: 40px;
     text-align: center;
   }
+  .container a {
+    text-decoration: none; /* Remover sublinhado */
+    color: #f35dfb; /* Cor do texto normal dos links */
+    transition: color 0.3s; /* Transição suave para a cor do texto ao passar o mouse */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container a:hover {
+    color: #b565b8; /* Mudar a cor do texto ao passar o mouse */
+}
 .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do conteúdo */
 }
+.container2 {
+    width: 1025px;
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 8%;
+    background-color: #deacf8;
+    padding: 5px;
+    text-align: left;
+    font-size: 20px; /* Altera o tamanho da fonte para 20 pixels */
+    font-weight: bold; /* Define o texto em negrito */
+    color: white; /* Define a cor do texto como branco */
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+  }
+  .cap {
+    margin-top: 25px;
+    text-align: left;
+    padding-left: 120px;
+    font-size: 20px; /* Altera o tamanho da fonte para 20 pixels */
+    font-weight: bold;
+    color: #A8A6E1;
+  }
+  p {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 95px;
+  }

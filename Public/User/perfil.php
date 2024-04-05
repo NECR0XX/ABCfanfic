@@ -14,7 +14,7 @@ $fanfics = $fanficController->listarFanfics($_SESSION['usuarioId']);
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="../../Resources/css/styleperfil.css">
     <link rel="stylesheet" href="../../Resources/css/styleperfilresp.css">
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 <body>
     <header>
