@@ -68,7 +68,7 @@ if (isset($_GET['categoria_id'])) {
                     echo "<div style='display: flex;'>";
                     // Imagem do fanfic
                     if (!empty($fanfic['imagem'])) {
-                        echo '<img src="../' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100">';
+                        echo '<img src="../' . $fanfic['imagem'] . '" alt="Imagem do fanfic" width="100" height= "120">';
                     } else {
                         echo 'Sem Imagem';
                     }
@@ -83,18 +83,63 @@ if (isset($_GET['categoria_id'])) {
                         echo "Em andamento";
                     }
                     echo "</div>";
-                
+                    $sql = "SELECT COUNT(*) AS total_capitulos FROM capitulos WHERE fanfic_id = :fanfic_id";
+                    $stmt = $pdo->prepare($sql);
+                    $stmt->bindParam(':fanfic_id', $fanfic['id_fanfic']);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
                     // Número de capítulos
+                    $sql = "SELECT texto FROM capitulos WHERE fanfic_id = :fanfic_id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':fanfic_id', $fanfic['id_fanfic']);
+    $stmt->execute();
+
+    // Inicializa a variável para armazenar o número total de palavras
+    $total_palavras = 0;
+
+    // Loop através de cada capítulo e calcular o número de palavras
+    while ($capitulo = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        // Obtém o texto do capítulo
+        $texto = $capitulo['texto'];
+
+        // Divide o texto em palavras
+        $palavras = str_word_count($texto);
+
+        // Adiciona o número de palavras deste capítulo ao total
+        $total_palavras += $palavras;
+    }
                     echo "<div>";
-                    echo "<p>Capítulos: </p>";
+                    echo "<p>Capítulos {$row['total_capitulos']}</p>";
                     echo "</div>";
-                    
-                    echo "<a href='leiturafan.php?fanfic_id={$fanfic['id_fanfic']}'><p><strong>Título: </strong>{$fanfic['titulo']}</p></a>";
-                    echo "<p><strong>Autor: </strong>{$fanfic['nome_user']}</p>";
-                    
+                    echo "<div>";
+                    echo "<p>Palavras {$total_palavras}</p>";
+                    echo "</div>";
+
+                    $sql = "SELECT COUNT(*) AS total_capitulos, MAX(data_adicao) AS ultima_atualizacao FROM capitulos WHERE fanfic_id = :fanfic_id";
+                    $stmt = $pdo->prepare($sql);
+                    $stmt->bindParam(':fanfic_id', $fanfic['id_fanfic']);
+                    $stmt->execute();
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    $ultima_atualizacao_formatada = date('d/m/Y H:i', strtotime($row['ultima_atualizacao']));
+                
+                    echo "<div>";
+                    echo "<p>Atualizada em {$ultima_atualizacao_formatada}</p>";
+                    echo "</div>";
                     
                     echo "</p>";
                     echo "</div>";
+                    
+                    echo "</div>"; // Fechar div.style
+                    echo "<div class='sinopse'>";
+                    echo "<p>{$fanfic['sinopse']}</p>";
+                    echo "</div>";
+                    echo "<p>(Entre na fanfic para ler o resto)</p>";
+
+                    echo "<div class= 'btn'>";
+                    echo "<a href='leiturafan.php?fanfic_id={$fanfic['id_fanfic']}' class='btn'>LER</a>";
+                    echo "</div>";
+                    echo "</div>"; // Fechar div.fanfic
                 }
             ?>
         </div>
