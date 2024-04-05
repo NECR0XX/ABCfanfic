@@ -23,7 +23,7 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" type="text/css" href="../../../Resources/css\leiturafan.css" />
-    <title>Document</title>
+    <title>Leitura</title>
 </head>
 <body>
     <header>

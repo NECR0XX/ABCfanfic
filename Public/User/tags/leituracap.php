@@ -9,7 +9,14 @@ $capController = new CapController($pdo);
 $fanficController = new FanficController($pdo);
 
 $caps = $capController->listarCapPorId($id_capitulo);
+if ($caps) {
+    $id_fanfic = $caps['fanfic_id'];
+    $fanfics = $fanficController->getFanficById($id_fanfic); // Recuperando os detalhes da fanfic
 
+    // Restante do seu código para exibir os detalhes do capítulo e da fanfic
+} else {
+    echo "<p>Não foi possível encontrar o capítulo atual.</p>";
+}
 $proximo_capitulo = $capController->listarProximoCapitulo($id_capitulo, $caps['fanfic_id']);
 $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps['fanfic_id']);
 ?>
@@ -21,7 +28,7 @@ $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps[
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" type="text/css" href="../../../Resources/css\leiturafan.css" />
-    <title>Document</title>
+    <title>Ler Capítulo</title>
 </head>
 <body>
     <header>
@@ -66,21 +73,13 @@ $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps[
         <?php 
         
         echo "<div class= 'container2'> 
-        <p>História:" . $fanfics['titulo'] . " - ". $caps['titulo'] ." 
+        História " . $fanfics['titulo'] . " - ". $caps['titulo'] ." 
         </div>";
 
         if ($caps) {
             $id_fanfic = $caps['fanfic_id'];
-            echo "<a href='leiturafan.php?fanfic_id=$id_fanfic'>Voltar para a fanfic</a>";
-            echo "<p>" . $caps['cap'] . "<strong> - </strong>" . $caps['titulo'] . "</p>";
-            echo "<p><strong>Texto: </strong>" . $caps['texto'] . "</p>";
-        
-            if ($proximo_capitulo) {
-                $id_proximo_capitulo = $proximo_capitulo['id_capitulo'];
-                $url_proximo_capitulo = "leituracap.php?id_capitulo=$id_proximo_capitulo";
-                $link_proximo_capitulo = "<a href='$url_proximo_capitulo'>Próximo Capítulo</a>";
-                echo $link_proximo_capitulo;
-            }
+            echo "<div class= 'cap'>" . $caps['cap'] . "</div>";
+            echo "<p>" . $caps['texto'] . "</p>";
         
             if ($capitulo_anterior) {
                 $id_capitulo_anterior = $capitulo_anterior['id_capitulo'];
@@ -88,9 +87,17 @@ $capitulo_anterior = $capController->listarCapituloAnterior($id_capitulo, $caps[
                 $link_capitulo_anterior = "<a href='$url_capitulo_anterior'>Capítulo Anterior</a>";
                 echo $link_capitulo_anterior;
             }
+
+            if ($proximo_capitulo) {
+                $id_proximo_capitulo = $proximo_capitulo['id_capitulo'];
+                $url_proximo_capitulo = "leituracap.php?id_capitulo=$id_proximo_capitulo";
+                $link_proximo_capitulo = "<a href='$url_proximo_capitulo'>Próximo Capítulo</a>";
+                echo $link_proximo_capitulo;
+            }
         } else {
             echo "<p>Não foi possível encontrar o capítulo atual.</p>";
         }
+        echo "<a href='leiturafan.php?fanfic_id=$id_fanfic'>Voltar para a fanfic</a>";
     ?>
         </div>
     </section>
