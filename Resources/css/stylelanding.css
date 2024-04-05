@@ -276,7 +276,6 @@ img.logo {
 .infor {
     width: 40%;
     display: flex;
-    position: relative;
     margin: 20px 20px 20px 197px;
     flex-direction: column;
     justify-content: center;
