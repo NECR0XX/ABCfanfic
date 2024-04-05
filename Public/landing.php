@@ -35,7 +35,7 @@ session_start();
                 <a href="User/tags.php">Tags</a>
                 <?php
                     if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
-                    <a href="User/perfil.php">perfil</a><br>
+                    <a href="User/perfil.php">Perfil</a><br>
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="User/sobre.php">Sobre</a>
