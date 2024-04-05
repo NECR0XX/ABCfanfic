@@ -210,3 +210,32 @@ img.logo {
     text-align: left;
     padding-left: 95px;
   }
+  /* Estilos para o botão */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo ao passar o mouse */
+.button:hover {
+    background-color: #4834d4;
+}
+
+/* Efeito de levantamento ao clicar */
+.button:active {
+    transform: translateY(2px);
+}
+
+/* Efeito de sombra ao focar */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.4);
+}
