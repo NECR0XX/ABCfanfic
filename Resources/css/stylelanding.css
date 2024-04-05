@@ -194,24 +194,22 @@ img.logo {
 }
 }
 
-/* SECTION 
+/* SECTION */
 .infog {
     font-family: inter;
     display: flex;
     margin: 20px;
     height: 600px;
-    background: rgb(243, 192, 255);
+    flex-wrap: wrap;
 }
 .cat {
-    margin: 20px;
-    width: 50%;
-    height: 45%;
     display: flex;
-    justify-content: space-between;
-    background: wheat;
     position: relative;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px 20px 20px 130px;
+    align-content: flex-start;
+    justify-content: center;
 }
 .cat h2{
     display: flex;
@@ -223,6 +221,8 @@ img.logo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-around;
+    margin: 40px 0 0 0;
 }
 .cat3 {
     width: 50%;
@@ -230,6 +230,8 @@ img.logo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-around;
+    margin: 40px 0 0 0;
 }
 .cat a{
     text-decoration: none;
@@ -249,26 +251,47 @@ img.logo {
     background: black;
     border-radius: 2px;
 }
+.line2 {
+    
+    position: absolute;
+    top: calc(50% + 1px);
+    left: 35%;
+    width: 30%;
+    height: 1px;
+    background: black;
+    border-radius: 2px;
+}
 .siga {
-    width: 25%;
-    height: 25%;
+    width: 47%;
     display: flex;
+    position: relative;
+    margin: 20px;
     flex-direction: column;
-    background: rgb(255, 186, 186);
+    justify-content: center;
+    text-align: center;
 }
 .infor {
-    width: 25%;
-    height: 25%;
+    width: 44%;
     display: flex;
+    position: relative;
+    margin: 20px 20px 20px 197px;
     flex-direction: column;
-    background: rgb(201, 255, 188);
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
 }
 .bene {
-    width: 25%;
-    height: 25%;
+    width: 45%;
     display: flex;
+    position: relative;
+    margin: 20px;
+    background: rgba(110, 108, 182, 1);
     flex-direction: column;
-    background: rgb(179, 234, 245);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
 }
 
 .topicsstart h3 {
@@ -325,4 +348,4 @@ hr {
     margin-left: 55px;
     width: 31%;
     margin-bottom: 30px;
-}*/
+}

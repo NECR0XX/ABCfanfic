@@ -57,7 +57,7 @@ if (isset($_GET['categoria_id'])) {
     </header>
     <section>
     <div class="container2">
-            <h1 class= "tag2"><a href="../landing.php">Abc fanfiction</h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag2"><a href="../tags.php"> Tags </h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag"> Comédia </h1>
+            <h1 class= "tag2"><a href="../../landing.php">Abc fanfiction</h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag2"><a href="../tags.php"> Tags </h1></a> <h1 class= "tag"> > </h1> <h1 class= "tag"> Comédia </h1>
     </div>
         <div class="fanfic-container">
             <?php
