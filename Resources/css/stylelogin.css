@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../Resources/Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
+
+}
+
+.login-container {
+    opacity: 0.98;
+    text-align: center;
+    background-color: #6E6CB6CF;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.alert {
+    color: red;
+}
+
+/* Estilizando os inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não altere a largura total */
+    padding-right: 150px;
+}
+
+/* Estilizando o botão */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #A8A6E1;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.150s;
+    background-color:#9290c4 ;
+}
+
+button:active {
+    background-color: rgb(237, 221, 2);
+}
+/* Estilizando o link de cadastro */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}

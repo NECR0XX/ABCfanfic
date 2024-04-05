@@ -71,21 +71,21 @@ session_start();
                     <a href="User/tags/terror.php?categoria_id=2">•  Terror</a>
                 </div>
             </div>
+            <div class="infor">
+                <p>Um site criado por fãs, administrado por fãs, sem fins lucrativos e não comercial, para obras de fãs transformadoras, como fanfiction, fanart, vídeos de fãs e podfic</p>
+                <h5>mais de 63.990 fandoms | 6.816.000 usuários | 12.630.000 obras</h5>
+            </div>
             <div class="siga">
                 <h2>Siga-nos</h2>
                 <div class="line2"></div>
                 <p>Siga-nos no Twitter ou no Tumblr para atualizações de status</p>
             </div>
-            <div class="infor">
-                <p>Um site criado por fãs, administrado por fãs, sem fins lucrativos e não comercial, para obras de fãs transformadoras, como fanfiction, fanart, vídeos de fãs e podfic</p>
-                <h5>mais de 63.990 fandoms | 6.816.000 usuários | 12.630.000 obras</h5>
-            </div>
             <div class="bene">
-                <p>Com uma conta Abc, você pode:
-                Compartilhe suas próprias obras de fãs
-                Seja notificado quando suas obras, séries ou usuários favoritos forem atualizados
-                Participe de desafios
-                Acompanhe as obras que você visitou e as que deseja conferir mais tarde
+                <p>Com uma conta Abc, você pode:<br><br>
+                ° Compartilhe suas próprias obras de fãs<br>
+                ° Seja notificado quando suas obras, séries ou usuários favoritos forem atualizados<br>
+                ° Participe de desafios<br>
+                ° Acompanhe as obras que você visitou e as que deseja conferir mais tarde<br>
                 Você pode participar recebendo um convite de nossa fila de convites automática. Todos os fãs e fanworks são bem-vindos!</p>
                 <?php if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
                     <?php else: ?>
