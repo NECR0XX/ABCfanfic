@@ -50,7 +50,6 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="../sobre.php">Sobre</a>
-                <a href="../tags.php">Voltar</a>
             </div>
             <div class="search">
                 <form id="search-form">
@@ -72,7 +71,7 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
                 <input type='hidden' name='fanfic_titulo' value="<?php echo $fanfics['titulo']; ?>">
                 <input type='hidden' name='user_id' value="<?php echo $_SESSION['usuarioId']; ?>">
                 <input type='hidden' name='fanfic_id' value="<?php echo $fanfics['id_fanfic']; ?> ">
-                <button type='submit'>Favoritar</button>
+                <button class= 'button' type='submit'>Favoritar</button>
             </form>
         <?php endif; ?>
 
