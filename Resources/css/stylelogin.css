@@ -70,3 +70,22 @@ h1 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
+
+    .procurar {
+        display: none;
+    }
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px; /* Reduzindo o preenchimento em telas menores */
+        max-width: 100%; /* Removendo a largura máxima */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button[type="submit"] {
+        padding: 8px; /* Reduzindo o padding em telas menores */
+        margin: 3px 0; /* Reduzindo a margem em telas menores */
+    }
+}
+

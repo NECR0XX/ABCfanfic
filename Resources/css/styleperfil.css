@@ -248,6 +248,10 @@ text-align: center;
     background-color: #ffdb4d;
 }
 
+.procurar{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     .bots {

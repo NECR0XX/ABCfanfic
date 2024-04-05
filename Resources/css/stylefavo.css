@@ -141,3 +141,6 @@ img.logo {
 #suggestions li:hover {
     background: #efefef;
 }
+.procurar {
+    display: none;
+}

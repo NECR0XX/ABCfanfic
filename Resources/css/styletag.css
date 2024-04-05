@@ -7,6 +7,9 @@ body {
     background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
     background-size: 350px;
 }
+.procurar {
+    display: none;
+}
 
 /* CABECALHO */
 img.logo {

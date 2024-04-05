@@ -9,6 +9,10 @@ body {
     flex-direction: column;
     font-family: inter;
 }
+
+.procurar {
+    display: none;
+}
 /* CABECALHO */
 img.logo {
     width: 80px;

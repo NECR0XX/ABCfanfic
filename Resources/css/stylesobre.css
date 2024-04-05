@@ -6,6 +6,9 @@ body {
     background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
     background-size: 250px;
 }
+.procurar {
+  display: none;
+}
 .container2 {
   display: flex;
   width: 1178px;
