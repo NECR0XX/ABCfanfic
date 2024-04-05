@@ -31,7 +31,6 @@ img.logo {
 }
 .cabpri h3 a {
     text-decoration: none;
-    margin-left: 900px;
     font-family: inter;
     color: #000000;
     align-self: center;
@@ -271,7 +270,7 @@ img.logo {
     text-align: center;
 }
 .infor {
-    width: 44%;
+    width: 40%;
     display: flex;
     position: relative;
     margin: 20px 20px 20px 197px;
