@@ -78,14 +78,14 @@ session_start();
             <div class="siga">
                 <h2>Siga-nos</h2>
                 <div class="line2"></div>
-                <p>Siga-nos no Twitter ou no Tumblr para atualizações de status</p>
+                <p>Siga-nos no <a href="https://twitter.com/">Twitter</a> ou no <a href="https://www.tumblr.com/?language=pt_BR">Tumblr</a> para atualizações de status</p>
             </div>
             <div class="bene">
                 <p>Com uma conta Abc, você pode:<br><br>
-                ° Compartilhe suas próprias obras de fãs<br>
-                ° Seja notificado quando suas obras, séries ou usuários favoritos forem atualizados<br>
-                ° Participe de desafios<br>
-                ° Acompanhe as obras que você visitou e as que deseja conferir mais tarde<br>
+                ° Compartilhar suas próprias obras de fãs<br>
+                ° Ser notificado quando suas obras, séries ou usuários favoritos forem atualizados<br>
+                ° Participar de desafios<br>
+                ° Acompanhar as obras que você visitou e as que deseja conferir mais tarde<br>
                 Você pode participar recebendo um convite de nossa fila de convites automática. Todos os fãs e fanworks são bem-vindos!</p>
                 <?php if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
                     <?php else: ?>
