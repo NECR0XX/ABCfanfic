@@ -157,56 +157,96 @@ img.logo {
 .star.rated {
     color: yellow;
 }
-
+/* Estilos para o container */
 .container {
-    width: 1178px;
-    height: 600px auto;
-    margin-top: 5%;
-    margin-left: 8%;
+    max-width: 90%; /* Definindo uma largura máxima para o container */
+    margin: 5% auto; /* Centralizando o container verticalmente e mantendo uma margem nas laterais */
+    padding: 20px;
     background-color: #EDEDED;
-    padding: 40px;
     text-align: center;
-  }
-  .container a {
-    text-decoration: none; /* Remover sublinhado */
-    color: #f35dfb; /* Cor do texto normal dos links */
-    transition: color 0.3s; /* Transição suave para a cor do texto ao passar o mouse */
-    padding-left: 10px;
-    padding-right: 10px;
+}
+
+/* Estilos para links dentro do container */
+.container a {
+    text-decoration: none;
+    color: #f35dfb;
+    transition: color 0.3s;
 }
 
 .container a:hover {
-    color: #b565b8; /* Mudar a cor do texto ao passar o mouse */
+    color: #b565b8;
 }
+
+/* Estilos para a informação */
 .info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px; /* Adiciona espaço abaixo do conteúdo */
+    margin-bottom: 20px;
 }
+
+/* Estilos para o container 2 */
 .container2 {
-    width: 1025px;
-    height: 30px;
-    margin-top: 5%;
-    margin-left: 8%;
+    max-width: 90%; /* Definindo uma largura máxima para o container 2 */
+    margin: 5% auto; /* Centralizando o container verticalmente e mantendo uma margem nas laterais */
+    padding: 10px;
     background-color: #deacf8;
-    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
     text-align: left;
-    font-size: 20px; /* Altera o tamanho da fonte para 20 pixels */
-    font-weight: bold; /* Define o texto em negrito */
-    color: white; /* Define a cor do texto como branco */
-    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
-  }
-  .cap {
+}
+
+/* Estilos para a cap */
+.cap {
     margin-top: 25px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 20px; /* Altera o tamanho da fonte para 20 pixels */
+    padding-left: 10%; /* Ajustando a margem esquerda */
+    font-size: 20px;
     font-weight: bold;
     color: #A8A6E1;
-  }
+}
+
+/* Estilos para o parágrafo */
+.container2 p {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5%;
+}
   p {
     font-weight: bold;
     text-align: left;
     padding-left: 95px;
   }
+  /* Regra de mídia para telas menores */
+@media only screen and (max-width: 600px) {
+    .cabpri {
+        flex-direction: column; /* Alterando a direção para empilhar em telas menores */
+        height: auto; /* Removendo a altura fixa */
+    }
+    .cabsec {
+        flex-direction: column; /* Alterando a direção para empilhar em telas menores */
+        height: auto; /* Removendo a altura fixa */
+        align-items: center;
+    }
+
+    .bots {
+        justify-content: space-evenly;
+    }
+
+    .cabpri h1 {
+        font-size: 24px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+
+    .acess {
+        padding: 0; /* Removendo o preenchimento para telas menores */
+    }
+
+    .acess button {
+        font-size: 12px; /* Reduzindo o tamanho da fonte do botão para telas menores */
+    }
+
+    .search {
+        padding: 10px; /* Ajustando o preenchimento para telas menores */
+    }
+
+    .search input {
+        font-size: 12px; /* Reduzindo o tamanho da fonte do input para telas menores */
+    }
+}

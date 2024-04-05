@@ -50,7 +50,6 @@ $favoritada = $favoritoController->verificarFavorito($user_id, $fanfic_id);
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="../sobre.php">Sobre</a>
-                <a href="../tags.php">Voltar</a>
             </div>
             <div class="search">
                 <form id="search-form">
