@@ -1,6 +1,6 @@
 
 body {
-    background-color: #A8A6E1;
+    background-image: url('../Assets/Uploads/WhatsApp Image 2024-03-15 at 9.45.25 AM.jpeg');
     background-size: 300px;
     height: 100%;
     margin: 0;
@@ -37,7 +37,6 @@ img.logo {
 }
 .cabpri h3 a {
     text-decoration: none;
-    margin-left: 900px;
     font-family: inter;
     color: #000000;
     align-self: center;
@@ -193,6 +192,16 @@ img.logo {
     flex-direction: row;
     text-align: center;
 }
+.container2 a {
+    text-decoration: none; /* Remover sublinhado */
+    color: #A8A6E1; /* Cor do texto normal dos links */
+    transition: color 0.3s; /* Transição suave para a cor do texto ao passar o mouse */
+}
+
+.container2 a:hover {
+    color: #7a78ad; /* Mudar a cor do texto ao passar o mouse */
+    font-weight: bold; /* Tornar o texto em negrito */
+}
 .tag {
     flex-direction: row;
     display: inline; /* ou display: inline; */
@@ -250,4 +259,9 @@ a:link {
     background-color: #c798ec;
     padding: 5px 30px 5px 30px;
     color: #544eff;
+    transition: color 0.3s, background-color 0.3s; /* Transição suave para a cor do texto e do background ao passar o mouse */
 }
+.btn a:hover{
+    background-color: #9c52d5;
+    color: #8e8afd;
+};

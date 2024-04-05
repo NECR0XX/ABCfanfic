@@ -17,7 +17,7 @@ if (isset($_GET['categoria_id'])) {
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="../../../Resources/Css/stylecateg.css">
-    <title>Lista de Fanfics de Ação</title>
+    <title>Lista de Fanfics de Fantasia</title>
 </head>
 <body>
     <header>

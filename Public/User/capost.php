@@ -30,7 +30,7 @@ if (isset($_POST['cap']) &&
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Public/Css/style.css">
     <link rel="shortcut icon" href="Public/Assets/_31554896-b491-466e-b129-d77e088c3b0c-removebg-preview.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Post Capítulos</title>
 </head>
 <body>
     <header>

@@ -32,7 +32,6 @@ img.logo {
 }
 .cabpri h3 a {
     text-decoration: none;
-    margin-left: 900px;
     font-family: inter;
     color: #000000;
     align-self: center;
@@ -141,6 +140,40 @@ img.logo {
 #suggestions li:hover {
     background: #efefef;
 }
+<<<<<<< HEAD
 .procurar {
     display: none;
 }
+=======
+@media only screen and (max-width: 600px) {
+    .cabpri {
+        flex-direction: column; /* Alterando a direção para empilhar em telas menores */
+        height: auto; /* Removendo a altura fixa */
+    }
+    .cabsec {
+        flex-direction: column; /* Alterando a direção para empilhar em telas menores */
+        height: auto; /* Removendo a altura fixa */
+        align-items: center;
+    }
+
+    .cabpri h1 {
+        font-size: 24px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+
+    .acess {
+        padding: 0; /* Removendo o preenchimento para telas menores */
+    }
+
+    .acess button {
+        font-size: 12px; /* Reduzindo o tamanho da fonte do botão para telas menores */
+    }
+
+    .search {
+        padding: 10px; /* Ajustando o preenchimento para telas menores */
+    }
+
+    .search input {
+        font-size: 12px; /* Reduzindo o tamanho da fonte do input para telas menores */
+    }
+}
+>>>>>>> aaa2629730bfee3e76ae74a289924d8f2f9a4497
