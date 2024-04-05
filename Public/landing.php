@@ -35,7 +35,7 @@ session_start();
                 <a href="User/tags.php">Tags</a>
                 <?php
                     if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
-                    <a href="User/perfil.php">perfil</a><br>
+                    <a href="User/perfil.php">Perfil</a><br>
                 <?php else: ?>
                 <?php endif; ?>
                 <a href="User/sobre.php">Sobre</a>
@@ -89,9 +89,6 @@ session_start();
                 Você pode participar recebendo um convite de nossa fila de convites automática. Todos os fãs e fanworks são bem-vindos!</p>
                 <?php if(isset($_SESSION['usuarioEmail']) && isset($_SESSION['usuarioNomedeUsuario'])): ?>
                     <?php else: ?>
-                        <form action="cadastro.php">
-                            <button>Seja Convidado</button>
-                        </form>
                     <?php endif; ?>
             </div>
         </div>

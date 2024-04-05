@@ -269,6 +269,10 @@ img.logo {
     justify-content: center;
     text-align: center;
 }
+
+.siga a{
+    text-decoration: none;
+}
 .infor {
     width: 40%;
     display: flex;
